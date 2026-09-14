@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-09-15 のAI公式アップデート（4件） | AI一次情報デイリー</title><meta name="description" content="2026-09-15 に確認した公式発表 4 件の要約と判定。主な項目: Configure cost and quality in Copilot auto model selection"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-09-15/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-09-15 のAI公式アップデート（4件）"><meta property="og:description" content="2026-09-15 に確認した公式発表 4 件の要約と判定。主な項目: Configure cost and quality in Copilot auto model selection"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-09-15/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-09-15 のAI公式アップデート（4件）"><meta name="twitter:description" content="2026-09-15 に確認した公式発表 4 件の要約と判定。主な項目: Configure cost and quality in Copilot auto model selection"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-09-14T22:45:28.000Z">2026-09-15</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-09-15 のAI公式アップデート（4件）</h1><p class="meta">2026-09-15 に確認した公式発表 4 件の要約と判定。主な項目: Configure cost and quality in Copilot auto model selection</p><p>公式発表 4 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-configure-cost-and-quality-in-copilot-auto-model-selection">1. Configure cost and quality in Copilot auto model selection</h2>
+<p><strong>GitHub</strong>（2026-09-14） ／ 判定: <strong>△ 様子見</strong> ／ 重要度 3/5 ／ 提供: 限定提供・日本: 不明</p>
+<p>GitHub Copilot の自動モデル選択（auto）で、efficiency・balance・intelligence の 3 段階から費用と品質の重み付けを選べるようになった。3 段階とも同じモデル群から選ばれ、課金は auto が選んだモデルに基づく。VS Code、Copilot CLI、GitHub Copilot app で順次提供中。</p>
+<ul>
+<li>提供条件: VS Code、Copilot CLI、GitHub Copilot app で順次展開中（rolling out）。対象プランの明記はないが、auto 経由の 10% 割引は有料プラン利用者向け。</li>
+<li>料金: 課金は段階に関係なく auto が選んだモデルに基づく。有料プラン利用者は auto 経由の利用に 10% 割引が継続。</li>
+<li>関係する人: GitHub Copilot を使う開発者、Copilot の費用を管理する企業の IT 部門</li>
+<li>今日できること: VS Code、Copilot CLI、GitHub Copilot app で auto の段階（efficiency / balance / intelligence）を選べるようになっているか確認する ／ 費用を抑えたいチームは efficiency を試し、auto が選んだモデルに基づく課金額の変化を確認する ／ Copilot Auto model selection のドキュメントで、更新された利用可能モデルの一覧を確認する</li>
+<li>出典: <a href="https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection">https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection</a></li>
+</ul>
+<h2 id="2-v0341">2. v0.34.1</h2>
+<p><strong>Ollama</strong>（2026-09-14） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: プレビュー・日本: 不明</p>
+<p>Ollama が v0.34.1-rc1 をプレリリースとして公開した。MLX ランナーのメモリ管理改善、トークン繰り返し上限の引き上げ、アプリ画面の修正、MLX と llama.cpp の更新が含まれる。</p>
+<ul>
+<li>提供条件: Pre-release（リリース候補 rc1）。</li>
+<li>関係する人: ローカルで LLM を動かす開発者、Apple シリコンで MLX を使う利用者</li>
+<li>今日できること: MLX でモデルを切り替えるとメモリ不足になっていた場合、v0.34.1-rc1 で改善するか検証環境で試す ／ トークン繰り返しでエラーが返るようになるため、呼び出し側でエラー処理があるか確認する</li>
+<li>出典: <a href="https://github.com/ollama/ollama/releases/tag/v0.34.1-rc1">https://github.com/ollama/ollama/releases/tag/v0.34.1-rc1</a></li>
+</ul>
+<h2 id="3-abnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale">3. Abnormal AI: Amazon Bedrock AgentCore for agentic email security at scale</h2>
+<p><strong>Amazon Web Services</strong>（2026-09-14） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>AWS 公式ブログが、メールセキュリティ企業 Abnormal AI による Amazon Bedrock AgentCore Code Interpreter の本番利用事例を紹介した。Abnormal AI は 3 層の検知構成のうち最難関の層でサンドボックス上のエージェントにコードを実行させている。記事は Code Interpreter の主な仕様と運用上の教訓も併記している。</p>
+<ul>
+<li>提供条件: 顧客事例記事。提供地域・料金の記載なし。</li>
+<li>関係する人: AWS でエージェントを構築する開発者、セキュリティ製品の開発者</li>
+<li>今日できること: Code Interpreter のセッション有効期間（既定 15 分・最大 8 時間）が自社の処理時間に足りるか確認する ／ 機密データを扱う場合はサンドボックス（外部通信なし）モードで構成できるか検討する</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/abnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale/">https://aws.amazon.com/blogs/machine-learning/abnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale/</a></li>
+</ul>
+<h2 id="4-how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock">4. How Ninth Wave built AI-powered open finance onboarding on Amazon Bedrock</h2>
+<p><strong>Amazon Web Services</strong>（2026-09-14） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>AWS 公式ブログが、オープンファイナンス接続を提供する Ninth Wave が Amazon Bedrock AgentCore と Strands Agents でオンボーディング支援システム Compass を構築した事例を紹介した。司令役のエージェントが意図を分類して 7 つの専門エージェントに振り分け、銀行ごとにデータを分離している。</p>
+<ul>
+<li>提供条件: 顧客事例記事。AWS の新機能や料金の発表ではない。</li>
+<li>関係する人: AWS でマルチエージェントを構築する開発者、金融業界の IT 部門</li>
+<li>今日できること: マルチエージェント構成で、エージェント単位のトークン使用量とコストを計測できているか確認する ／ 監査が必要なスコアや判定は、モデルの出力ではなくコードで計算する設計にできるか検討する</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/">https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-09-14/">← 2026-09-14</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
