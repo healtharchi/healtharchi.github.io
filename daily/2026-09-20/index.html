@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-09-20 のAI公式アップデート（9件） | AI一次情報デイリー</title><meta name="description" content="2026-09-20 に確認した公式発表 9 件の要約と判定。主な項目: v2.1.278"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-09-20/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-09-20 のAI公式アップデート（9件）"><meta property="og:description" content="2026-09-20 に確認した公式発表 9 件の要約と判定。主な項目: v2.1.278"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-09-20/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-09-20 のAI公式アップデート（9件）"><meta name="twitter:description" content="2026-09-20 に確認した公式発表 9 件の要約と判定。主な項目: v2.1.278"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-09-19T22:43:55.000Z">2026-09-20</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-09-20 のAI公式アップデート（9件）</h1><p class="meta">2026-09-20 に確認した公式発表 9 件の要約と判定。主な項目: v2.1.278</p><p>公式発表 9 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-v21278">1. v2.1.278</h2>
+<p><strong>Anthropic</strong>（2026-09-19） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 4/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Claude Code の v2.1.278 が公開された。Claude API と Enterprise の利用者、および Bedrock・Vertex・Foundry・ゲートウェイ経由の利用者について、auto mode の判定処理（classifier）が既定でサーバー側実行になり、その分の追加課金が発生しなくなった。課金の伴う方式に切り替わった場合は警告が出るほか、/status に Auto mode server の行が追加された。</p>
+<ul>
+<li>提供条件: 対象は Claude API と Enterprise の利用者、および Bedrock・Vertex・Foundry・ゲートウェイ経由の利用者。地域に関する記述は出典に無い。</li>
+<li>料金: classifier の処理分について、サーバー側 classifier では課金されないと記載されている（does not charge for classifier overhead）。具体的な金額や単価の記載は出典に無い。</li>
+<li>関係する人: 開発者、企業のIT部門、Claude Code を従量課金で使っているチーム</li>
+<li>今日できること: Claude Code を v2.1.278 に更新し、/status の Auto mode server の行でサーバー側 classifier が使われているか確認する ／ Bedrock・Vertex・Foundry・ゲートウェイ経由で従来の挙動に戻したい場合は CLAUDE_CODE_AUTO_MODE_SERVER=0 を設定する ／ 課金の伴うフォールバックの警告が出ていないか、実行時の表示を確認する</li>
+<li>出典: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.278">https://github.com/anthropics/claude-code/releases/tag/v2.1.278</a></li>
+</ul>
+<h2 id="2-v0343">2. v0.34.3</h2>
+<p><strong>Ollama</strong>（2026-09-19） ／ 判定: <strong>△ 様子見</strong> ／ 重要度 3/5 ／ 提供: プレビュー・日本: 不明</p>
+<p>Ollama がプレリリース v0.34.3（タグ v0.34.3-rc1）を公開した。GET /api/show がモデルごとの thinking の選択肢と既定値を返すようになり、Apple Silicon の MLX で Nemotron H の vision モデルに対応した。macOS アプリの挙動修正と HuggingFace からのモデル取得の不具合修正も含まれる。</p>
+<ul>
+<li>提供条件: GitHub Releases 上で Pre-release として公開。地域に関する記述は出典に無い。</li>
+<li>関係する人: 開発者、ローカルでLLMを動かす実務者</li>
+<li>今日できること: GET /api/show を呼び出して、使っているモデルの thinking の選択肢と既定値を確認する ／ Apple Silicon の Mac で Nemotron H の vision モデルを試す ／ HuggingFace からの pull が失敗していた場合は v0.34.3 で再試行する</li>
+<li>出典: <a href="https://github.com/ollama/ollama/releases/tag/v0.34.3-rc1">https://github.com/ollama/ollama/releases/tag/v0.34.3-rc1</a></li>
+</ul>
+<h2 id="3-01560-alpha8">3. 0.156.0-alpha.8</h2>
+<p><strong>OpenAI</strong>（2026-09-19） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: プレビュー・日本: 不明</p>
+<p>OpenAI の Codex CLI が、タグ rust-v0.156.0-alpha.8 としてプレリリース 0.156.0-alpha.8 を公開した。リリースページに記載されているのは「Release 0.156.0-alpha.8」という一文のみで、変更内容の説明は出典に含まれていない。</p>
+<ul>
+<li>提供条件: GitHub Releases 上で Pre-release として公開。地域や対象プランに関する記述は出典に無い。</li>
+<li>関係する人: 開発者、Codex CLI の利用者</li>
+<li>今日できること: 安定版を使っている場合は、alpha 版であることを踏まえて更新を見送るか、検証環境でのみ試す ／ 変更内容を知りたい場合は、リリースページに説明が無いため公式の変更履歴を待つ</li>
+<li>出典: <a href="https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.8">https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.8</a></li>
+</ul>
+<h2 id="4-introducing-the-australian-youth-safety-blueprint">4. Introducing the Australian Youth Safety Blueprint</h2>
+<p><strong>OpenAI</strong>（2026-09-18） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 発表のみ・日本: 不明</p>
+<p>OpenAI が、若年層が AI を使う際の保護を目的とした「Australian Youth Safety Blueprint」を公表した。AI リテラシー、年齢に応じた安全策、プライバシーに配慮した年齢確認、現実世界の危機支援への接続、保護者向け管理機能など 6 本の柱を示している。あわせて、2026年8月からオーストラリアで ChatGPT for Teens の提供を始めたことを説明している。</p>
+<ul>
+<li>提供条件: ChatGPT for Teens の提供開始はオーストラリアについて述べられており、日本を含む他地域の記述は出典に無い。</li>
+<li>関係する人: 一般利用者、教育関係者、企業のIT部門</li>
+<li>今日できること: Blueprint 本体（Read the blueprint のリンク）を読み、6 本の柱の内容を確認する ／ 10代の利用者がいる場合、ChatGPT の保護者向け管理機能（parental controls）の設定を確認する</li>
+<li>出典: <a href="https://openai.com/index/australian-youth-safety-blueprint">https://openai.com/index/australian-youth-safety-blueprint</a></li>
+</ul>
+<h2 id="5-01560-alpha6">5. 0.156.0-alpha.6</h2>
+<p><strong>OpenAI</strong>（2026-09-19） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: プレビュー・日本: 不明</p>
+<p>OpenAI の Codex CLI が、タグ rust-v0.156.0-alpha.6 としてプレリリース 0.156.0-alpha.6 を公開した。リリースページに記載されているのは「Release 0.156.0-alpha.6」という一文のみで、変更内容の説明は出典に含まれていない。</p>
+<ul>
+<li>提供条件: GitHub Releases 上で Pre-release として公開。地域や対象プランに関する記述は出典に無い。</li>
+<li>関係する人: 開発者、Codex CLI の利用者</li>
+<li>今日できること: 安定版を使っている場合は、alpha 版であることを踏まえて更新を見送るか、検証環境でのみ試す ／ 変更内容を知りたい場合は、リリースページに説明が無いため公式の変更履歴を待つ</li>
+<li>出典: <a href="https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.6">https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.6</a></li>
+</ul>
+<h2 id="6-01560-alpha7">6. 0.156.0-alpha.7</h2>
+<p><strong>OpenAI</strong>（2026-09-19） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: プレビュー・日本: 不明</p>
+<p>OpenAI の Codex CLI が、タグ rust-v0.156.0-alpha.7 としてプレリリース 0.156.0-alpha.7 を公開した。リリースページに記載されているのは「Release 0.156.0-alpha.7」という一文のみで、変更内容の説明は出典に含まれていない。</p>
+<ul>
+<li>提供条件: GitHub Releases 上で Pre-release として公開。地域や対象プランに関する記述は出典に無い。</li>
+<li>関係する人: 開発者、Codex CLI の利用者</li>
+<li>今日できること: 安定版を使っている場合は、alpha 版であることを踏まえて更新を見送るか、検証環境でのみ試す ／ 変更内容を知りたい場合は、リリースページに説明が無いため公式の変更履歴を待つ</li>
+<li>出典: <a href="https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.7">https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.7</a></li>
+</ul>
+<h2 id="7-v0343-rc0">7. v0.34.3-rc0</h2>
+<p><strong>Ollama</strong>（2026-09-18） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: プレビュー・日本: 不明</p>
+<p>Ollama のタグ v0.34.3-rc0 が作成された。出典ページに記載されているのは「api: expose model thinking levels and defaults (#18473)」というコミットの表題のみで、リリースノートの本文は無い。</p>
+<ul>
+<li>提供条件: リリース候補（rc0）のタグ。提供条件や地域に関する記述は出典に無い。</li>
+<li>関係する人: 開発者、ローカルでLLMを動かす実務者</li>
+<li>今日できること: thinking の値と既定値を API から取得したい場合は、後続の v0.34.3 のリリースノートを確認する</li>
+<li>出典: <a href="https://github.com/ollama/ollama/releases/tag/v0.34.3-rc0">https://github.com/ollama/ollama/releases/tag/v0.34.3-rc0</a></li>
+</ul>
+<h2 id="8-ai情報通9月14日15時の情報">8. AI情報通：9月14日15時の情報</h2>
+<p><strong>AIセーフティ・インスティテュート (AISI)</strong>（2026-09-15） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 発表のみ・日本: 不明</p>
+<p>AISI が、2026年9月14日15時時点の AI セーフティ関連の動向をまとめて公表した。Anthropic CEO の Dario Amodei 氏による AI 開発ペースの抑制を求める提言と、Anthropic による Claude の悪用事例をまとめた報告書が主な内容である。</p>
+<ul>
+<li>提供条件: AISI（日本の機関）による情報まとめ。提供条件に関する記述は無い。</li>
+<li>関係する人: 企業のIT部門、経営層、AIガバナンス担当者</li>
+<li>今日できること: Anthropic の報告書「Detecting and countering misuse of AI: September 2026」を読み、自社の利用形態に当てはまる悪用手口がないか確認する ／ AI モデルを外部サービス経由で使っている場合、実際にどのモデルが応答しているかを提供元の説明で確認する</li>
+<li>出典: <a href="https://aisi.go.jp/activity/activity_news/260915/">https://aisi.go.jp/activity/activity_news/260915/</a></li>
+</ul>
+<h2 id="9-ai情報通9月17日15時の情報">9. AI情報通：9月17日15時の情報</h2>
+<p><strong>AIセーフティ・インスティテュート (AISI)</strong>（2026-09-18） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 発表のみ・日本: 不明</p>
+<p>AISI が、2026年9月17日15時時点の AI セーフティ関連の動向をまとめて公表した。国際連合による AI 開発速度への懸念と国際協調の呼びかけ、カナダ政府とドイツ政府による非営利組織 LawZero への投資計画、Microsoft AI による開発・運用指針の初稿公表が主な内容である。</p>
+<ul>
+<li>提供条件: AISI（日本の機関）による情報まとめ。個別の制度・指針の日本での適用については出典に記載なし。</li>
+<li>関係する人: 企業のIT部門、経営層、AIガバナンス担当者</li>
+<li>今日できること: Microsoft AI の Humanist AI Code of Conduct 初稿を読み、6週間の意見募集に応じるか検討する ／ OpenAI の model misalignment reporting framework の報告書を確認する</li>
+<li>出典: <a href="https://aisi.go.jp/activity/activity_news/260918/">https://aisi.go.jp/activity/activity_news/260918/</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-09-19/">← 2026-09-19</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
