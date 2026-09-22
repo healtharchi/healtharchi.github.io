@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-09-23 のAI公式アップデート（6件） | AI一次情報デイリー</title><meta name="description" content="2026-09-23 に確認した公式発表 6 件の要約と判定。主な項目: Claude Opus 5.5 is now available on AWS"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-09-23/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-09-23 のAI公式アップデート（6件）"><meta property="og:description" content="2026-09-23 に確認した公式発表 6 件の要約と判定。主な項目: Claude Opus 5.5 is now available on AWS"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-09-23/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-09-23 のAI公式アップデート（6件）"><meta name="twitter:description" content="2026-09-23 に確認した公式発表 6 件の要約と判定。主な項目: Claude Opus 5.5 is now available on AWS"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-09-22T22:41:03.000Z">2026-09-23</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-09-23 のAI公式アップデート（6件）</h1><p class="meta">2026-09-23 に確認した公式発表 6 件の要約と判定。主な項目: Claude Opus 5.5 is now available on AWS</p><p>公式発表 6 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-claude-opus-55-is-now-available-on-aws">1. Claude Opus 5.5 is now available on AWS</h2>
+<p><strong>AWS</strong>（2026-09-22） ／ 判定: <strong>△ 様子見</strong> ／ 重要度 4/5 ／ 提供: 一般提供・日本: 一部</p>
+<p>AWS は Claude Opus 5.5 を Amazon Bedrock と Claude Platform on AWS で提供開始した。Claude 5.5 ファミリーの最初のモデルで、Anthropic によれば Claude Opus 5 より少ないトークンで多くをこなし、トークン単価の引き下げとキャッシュ読み取りの大幅な値下げにより、タスクあたりの平均コストが Opus 5 より低いとされる。Bedrock では JP Geo CRIS（jp.）を含む推論プロファイルで利用できる。</p>
+<ul>
+<li>提供条件: Bedrock の bedrock-runtime で US／EU／AU／JP Geo CRIS と Global CRIS の推論プロファイル。bedrock-mantle は us-east-1 と ap-southeast-4。Claude Platform on AWS は北米のみ。JP Geo CRIS（jp.）の明記はあるが、Claude Platform on AWS は北米のみのため partial とした。</li>
+<li>料金: Lower per-token prices and much cheaper cache reads（Anthropic によれば）。具体的な単価はこのページに記載なし。For pricing information, see Amazon Bedrock pricing.</li>
+<li>関係する人: Amazon Bedrock で Claude を使う開発者、企業のIT部門、AI API の費用を管理する担当者</li>
+<li>今日できること: Amazon Bedrock コンソールで Test → Playground を開き、Claude Opus 5.5 を選んで既存のプロンプトを試す ／ Bedrock から呼ぶ場合は modelId に global.anthropic.claude-opus-5-5 などの推論プロファイルを指定し、IAM に bedrock:InvokeModel と bedrock:InvokeModelWithResponseStream を付与する ／ 日本のデータ所在を重視する場合は JP Geo CRIS（jp.）の推論プロファイルを使えるか確認する ／ 拒否が増える可能性があるため、生物学・サイバーセキュリティ・AI 開発に関わるワークロードは切り替え前に挙動を確認する</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws/">https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws/</a></li>
+</ul>
+<h2 id="2-openais-gpt-6-sol-and-gpt-6-luna-now-available">2. OpenAI’s GPT-6 Sol and GPT-6 Luna now available</h2>
+<p><strong>GitHub</strong>（2026-09-22） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHub Copilot で OpenAI の GPT-6 Sol と GPT-6 Luna が選べるようになった。既にある GPT-6 Astra に加わる形で、Sol は対話型・エージェント型コーディング向けのバランス型、Luna は小さく速いタスク向けの低コストモデルと説明されている。いずれも usage-based billing で課金され、ロールアウトは段階的。</p>
+<ul>
+<li>提供条件: GPT-6 Sol は Copilot Pro+／Max／Business／Enterprise、GPT-6 Luna は Copilot Pro／Pro+／Max／Business／Enterprise。ロールアウトは段階的。Business／Enterprise は管理者のモデルポリシーで制御され、既定では新モデルが自動で有効。</li>
+<li>料金: These models are billed under usage-based billing.（具体的な単価はこのページに記載なし。GitHub Copilot のモデルとリクエストの料金ページを参照するよう案内されている）</li>
+<li>関係する人: GitHub Copilot を使う開発者、Copilot Business／Enterprise の管理者、企業のIT部門</li>
+<li>今日できること: Copilot Pro+／Max／Business／Enterprise の利用者は、VS Code などのモデルピッカーに GPT-6 Sol が出ているか確認する（Pro では Luna のみ） ／ Copilot Business／Enterprise の管理者は、Copilot 設定のモデルポリシーで GPT-6 モデルを有効のままにするか無効にするかを決める ／ usage-based billing で課金されるため、GitHub Copilot のモデルとリクエストの料金ページで単価を確認する</li>
+<li>出典: <a href="https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available">https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available</a></li>
+</ul>
+<h2 id="3-claude-opus-55-is-now-available-in-github-copilot">3. Claude Opus 5.5 is now available in GitHub Copilot</h2>
+<p><strong>GitHub</strong>（2026-09-22） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHub Copilot で Anthropic の Claude Opus 5.5 が選べるようになった。Copilot Pro+／Max／Business／Enterprise が対象で、provider list pricing による usage-based billing で課金される。Opus 5.5 はテキスト出力に透かしを入れ、透かしによるトークンやコストの追加は無いとされる。</p>
+<ul>
+<li>提供条件: Copilot Pro+／Max／Business／Enterprise が対象。ロールアウトは段階的。Business／Enterprise は管理者のモデルポリシーで制御（既定では自動で有効）。</li>
+<li>料金: This model is billed at provider list pricing under usage-based billing.（具体的な単価はこのページに記載なし。Models and pricing for GitHub Copilot を参照するよう案内）</li>
+<li>関係する人: GitHub Copilot を使う開発者、Copilot Business／Enterprise の管理者、AI ツールの費用を管理する担当者</li>
+<li>今日できること: Copilot Pro+／Max／Business／Enterprise の利用者は、モデルピッカーに Claude Opus 5.5 が出ているか確認する ／ Copilot Business／Enterprise の管理者は、Copilot 設定のモデルポリシーで Claude Opus 5.5 を有効のままにするか決める ／ provider list pricing の従量課金になるため、Models and pricing for GitHub Copilot で単価を確認する</li>
+<li>出典: <a href="https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot">https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot</a></li>
+</ul>
+<h2 id="4-bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock">4. Bring more intelligence to everyday work with GPT-6 Sol and GPT-6 Luna on Amazon Bedrock</h2>
+<p><strong>AWS</strong>（2026-09-22） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>AWS は OpenAI の GPT-6 Sol と GPT-6 Luna を Amazon Bedrock で一般提供（GA）した。両モデルは GPT-5.6 の前世代より大幅に低い API 料金とされ、Bedrock では明示的なプロンプトキャッシュに対応する。推論データはモデル学習に使われず、OpenAI とのデータ共有へのオプトインも不要とされる。</p>
+<ul>
+<li>提供条件: Amazon Bedrock で一般提供。対応リージョン・推論プロファイルはこのページに記載なし（Amazon Bedrock のドキュメント参照と案内）。</li>
+<li>料金: significantly lower API pricing than their GPT-5.6 predecessors（具体的な単価はこのページに記載なし。Amazon Bedrock のドキュメント参照と案内）</li>
+<li>関係する人: Amazon Bedrock を使う開発者、企業のIT部門、データ管理・セキュリティ担当者</li>
+<li>今日できること: Amazon Bedrock コンソールで GPT-6 Sol と GPT-6 Luna を試す ／ 日本リージョンで使えるかと単価は、Amazon Bedrock のドキュメントで対応リージョン・推論プロファイル・料金を確認する ／ ゼロデータ保持が必要な場合は AWS のアカウントチームに申請する</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock/">https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock/</a></li>
+</ul>
+<h2 id="5-parallel-cut-research-time-and-cost-in-half-with-gpt6-astra">5. Parallel cut research time and cost in half with GPT‑6 Astra</h2>
+<p><strong>OpenAI</strong>（2026-09-22） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>OpenAI の顧客事例で、Web 上の調査エージェント基盤を提供する Parallel が GPT‑6 Astra を使い、以前のモデルと比べて調査タスクの所要時間とコストを約半分にしたと紹介された。労働市場統計の調査テストで、同等の品質を保ったとされる。</p>
+<ul>
+<li>提供条件: 顧客事例であり、提供条件の発表ではない。</li>
+<li>関係する人: 調査エージェントを構築する開発者</li>
+<li>今日できること: 長時間の調査タスクを API で動かしている場合、GPT‑6 Astra で所要時間とコストを既存モデルと比較する</li>
+<li>出典: <a href="https://openai.com/index/parallel-cuts-time-and-cost-with-astra">https://openai.com/index/parallel-cuts-time-and-cost-with-astra</a></li>
+</ul>
+<h2 id="6-v0343">6. v0.34.3</h2>
+<p><strong>Ollama</strong>（2026-09-19） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Ollama v0.34.3 が公開された。GET /api/show が各モデルの thinking の制御値と既定値を返すようになり、Apple Silicon の MLX で Nemotron H のビジョンモデルに対応した。HuggingFace からのモデル取得の不具合修正なども含む。</p>
+<ul>
+<li>提供条件: Latest リリース。</li>
+<li>関係する人: Ollama でローカルモデルを動かす開発者</li>
+<li>今日できること: ollama show &lt;モデル名&gt; で、使っているモデルの thinking の levels と default を確認する ／ HuggingFace からのモデル取得で不具合があった場合は v0.34.3 に更新する</li>
+<li>出典: <a href="https://github.com/ollama/ollama/releases/tag/v0.34.3">https://github.com/ollama/ollama/releases/tag/v0.34.3</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-09-22/">← 2026-09-22</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
