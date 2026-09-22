@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-09-22 のAI公式アップデート（4件） | AI一次情報デイリー</title><meta name="description" content="2026-09-22 に確認した公式発表 4 件の要約と判定。主な項目: Grok 4.7 is now available in GitHub Copilot"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-09-22/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-09-22 のAI公式アップデート（4件）"><meta property="og:description" content="2026-09-22 に確認した公式発表 4 件の要約と判定。主な項目: Grok 4.7 is now available in GitHub Copilot"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-09-22/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-09-22 のAI公式アップデート（4件）"><meta name="twitter:description" content="2026-09-22 に確認した公式発表 4 件の要約と判定。主な項目: Grok 4.7 is now available in GitHub Copilot"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-09-22T13:01:07.000Z">2026-09-22</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-09-22 のAI公式アップデート（4件）</h1><p class="meta">2026-09-22 に確認した公式発表 4 件の要約と判定。主な項目: Grok 4.7 is now available in GitHub Copilot</p><p>公式発表 4 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-grok-47-is-now-available-in-github-copilot">1. Grok 4.7 is now available in GitHub Copilot</h2>
+<p><strong>GitHub</strong>（2026-09-21） ／ 判定: <strong>△ 様子見</strong> ／ 重要度 3/5 ／ 提供: 限定提供・日本: 不明</p>
+<p>GitHub は xAI の推論モデル Grok 4.7 を GitHub Copilot で段階的に提供開始したと発表した。Copilot Pro、Pro+、Max、Business、Enterprise で利用でき、使用量ベースの課金ではプロバイダーの定価で課金される。Business と Enterprise では管理者が Copilot 設定のモデルポリシーでアクセスを管理できる。</p>
+<ul>
+<li>提供条件: 段階的なロールアウト中。対象は Copilot Pro、Pro+、Max、Business、Enterprise。Business / Enterprise は管理者のモデルポリシー設定に依存（既定では新モデルは自動有効）。</li>
+<li>料金: 使用量ベースの課金のもとで、プロバイダーの定価（provider list pricing）で課金される。具体的な単価は出典本文に記載なし（Models and pricing for GitHub Copilot を参照するよう案内あり）。</li>
+<li>関係する人: 開発者、企業のIT部門（Copilot 管理者）</li>
+<li>今日できること: Copilot Business / Enterprise の管理者は、Copilot 設定のモデルポリシーで Grok 4.7 を有効のままにするか無効にするかを決める ／ Copilot Pro / Pro+ / Max の利用者は、VS Code などのモデルピッカーに Grok 4.7 が表示されるか確認する（段階的提供のため未表示の場合あり） ／ Models and pricing for GitHub Copilot のページで課金条件を確認する</li>
+<li>出典: <a href="https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot">https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot</a></li>
+</ul>
+<h2 id="2-v0300">2. v0.30.0</h2>
+<p><strong>vLLM project</strong>（2026-09-22） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>推論サーバー vLLM の v0.30.0 が公開された。DeepSeek-V4.1-Flash や GLM-5.3-Flash などの新モデル対応、GPU 上に量子化済み重みを保持して再起動を速くする Fast Start、Gumbel-max 方式の透かし（watermarking）などが加わった。scale-out エンドポイントの opt-in 化や一部環境変数の削除などの破壊的変更を含む。</p>
+<ul>
+<li>提供条件: GitHub のリリースページで Latest 表示。PyPI・Docker・ROCm・XPU・CPU 向け配布物あり。</li>
+<li>関係する人: LLM を自前でホスティングする開発者、推論基盤の運用担当者</li>
+<li>今日できること: VLLM_ENABLE_SCALE_OUT_ENDPOINTS を使っている場合、アップグレード時に vllm serve の –enable-scale-out へ切り替える ／ VLLM_PREFIX_CACHE_RETENTION_INTERVAL や VLLM_MM_HASHER_ALGORITHM 環境変数、GPTQ の g_idx に依存していないか確認する ／ python -m vllm.entrypoints.grpc_server を使っている場合は vllm serve –grpc への移行を検討する</li>
+<li>出典: <a href="https://github.com/vllm-project/vllm/releases/tag/v0.30.0">https://github.com/vllm-project/vllm/releases/tag/v0.30.0</a></li>
+</ul>
+<h2 id="3-explanation-bound-tool-execution-for-ai-agents-server-verified-action-claims-without-trusting-model-rationales">3. Explanation-Bound Tool Execution for AI Agents: Server-Verified Action Claims Without Trusting Model Rationales</h2>
+<p><strong>arXiv（著者: Genliang Zhu ほか、Accentrust / Georgia Institute of Technology / University of Illinois Urbana-Champaign）</strong>（2026-09-18） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>ツールを使う AI エージェントが付ける自由記述の理由付けを、型付きの「行動クレーム」に変換し、サーバー側が保持する意図・ポリシー・ペイロード・ツール・リスク・来歴・鮮度の事実と照合する仲介層 EBTE を提案する論文（v3）。矛盾は拒否、不完全・不確実なクレームはレビューに回し、一致したものだけを実行対象とする。著者作成の適合性シナリオなど、評価した設定の範囲で実現可能性を示したとしている。</p>
+<ul>
+<li>提供条件: 研究論文（arXiv プレプリント）。製品・サービスの提供に関する記述はない。</li>
+<li>関係する人: AI エージェントを開発する開発者、セキュリティ担当者</li>
+<li>今日できること: arXiv:2607.25364 の PDF で、EBTE のリファレンスプロファイルと評価条件（著者作成シナリオ）を確認する</li>
+<li>出典: <a href="https://arxiv.org/abs/2607.25364">https://arxiv.org/abs/2607.25364</a></li>
+</ul>
+<h2 id="4-simplifying-model-serving-across-multiple-gpus-with-nvidia-tensorrt-multi-device-integration-in-nvidia-dynamo-triton">4. Simplifying Model Serving Across Multiple GPUs with NVIDIA TensorRT Multi-Device Integration in NVIDIA Dynamo-Triton</h2>
+<p><strong>NVIDIA</strong>（2026-09-21） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>NVIDIA は、1 つの TensorRT ネットワークを NCCL で複数 GPU にまたがって実行する TensorRT multi-device inference（TensorRT 11.0 から正式対応）を、NVIDIA Dynamo-Triton 26.07 の TensorRT バックエンドで使えるようにしたと解説した。1 つの KIND_MODEL インスタンスが複数 GPU を持ち、アプリケーションは 1 つの gRPC エンドポイントを呼ぶだけでよい。Cosmos 3 Nano の動画生成を例に、8 GPU で生成時間が短縮された測定結果を示している。</p>
+<ul>
+<li>提供条件: TensorRT multi-device inference は TensorRT 11.0 から正式サポート。Dynamo-Triton 26.07 で TensorRT バックエンドの multi-device が有効。NGC からダウンロードできる。</li>
+<li>関係する人: 推論基盤の運用担当者、生成 AI サービスを自前で提供する開発者</li>
+<li>今日できること: NGC から NVIDIA Dynamo-Triton 26.07 をダウンロードし、自環境で結果を再現する ／ Dynamo-Triton TensorRT backend multi-device guide で設定方法を確認する ／ GPU 追加と遅延短縮の損得を、自社の SLO と運用コストで評価する（本ベンチマークはスループットやコストを測っていない）</li>
+<li>出典: <a href="https://developer.nvidia.com/blog/simplifying-model-serving-across-multiple-gpus-with-nvidia-tensorrt-multi-device-integration-in-nvidia-dynamo-triton/">https://developer.nvidia.com/blog/simplifying-model-serving-across-multiple-gpus-with-nvidia-tensorrt-multi-device-integration-in-nvidia-dynamo-triton/</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-09-21/">← 2026-09-21</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
