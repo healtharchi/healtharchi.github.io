@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-09-29 のAI公式アップデート（4件） | AI一次情報デイリー</title><meta name="description" content="2026-09-29 に確認した公式発表 4 件の要約と判定。主な項目: Introducing Claude Sonnet 5.5 on AWS"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-09-29/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-09-29 のAI公式アップデート（4件）"><meta property="og:description" content="2026-09-29 に確認した公式発表 4 件の要約と判定。主な項目: Introducing Claude Sonnet 5.5 on AWS"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-09-29/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-09-29 のAI公式アップデート（4件）"><meta name="twitter:description" content="2026-09-29 に確認した公式発表 4 件の要約と判定。主な項目: Introducing Claude Sonnet 5.5 on AWS"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-09-28T22:46:01.000Z">2026-09-29</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-09-29 のAI公式アップデート（4件）</h1><p class="meta">2026-09-29 に確認した公式発表 4 件の要約と判定。主な項目: Introducing Claude Sonnet 5.5 on AWS</p><p>公式発表 4 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-introducing-claude-sonnet-55-on-aws">1. Introducing Claude Sonnet 5.5 on AWS</h2>
+<p><strong>Amazon Web Services (AWS)</strong>（2026-09-28） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 4/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>AWS は Claude Sonnet 5.5 を Amazon Bedrock と Claude Platform on AWS で提供開始した。Bedrock では Global CRIS（global.）推論プロファイル経由で当日から利用でき、コード例のモデル ID は global.anthropic.claude-sonnet-5-5。Claude Platform on AWS は北米で利用可能。AWS は Sonnet 5.5 を「大半の作業で Opus 5.5 よりタスクあたりのコストが低く高速」と位置づけ、料金は Amazon Bedrock pricing を参照するよう案内している。</p>
+<ul>
+<li>提供条件: Bedrock は Global CRIS（global.）推論プロファイル経由で当日から利用可能。対応リージョン一覧は本文に無くドキュメントを参照。Claude Platform on AWS は北米（North America）のみ。</li>
+<li>料金: 単価の数値は本文に無く、Amazon Bedrock pricing を参照するよう案内。AWS の位置づけとして「大半の作業で Opus 5.5 よりタスクあたりのコストが低い（lower cost per task）」と記載。</li>
+<li>関係する人: Bedrock で Claude を使う開発者、企業の IT 部門（データレジデンシー・監査要件）、モデル選定とコストを管理する担当者</li>
+<li>今日できること: Bedrock コンソールの Test &gt; Playground で Sonnet 5.5 を選び、自分のプロンプトで動作を確認する ／ コードでは Global CRIS の推論プロファイル（global.anthropic.claude-sonnet-5-5）を指定し、応答の text ブロックを固定インデックスではなく type で選ぶ ／ IAM に bedrock:InvokeModel と bedrock:InvokeModelWithResponseStream を付与し、対応リージョンは Bedrock のドキュメントで確認する ／ 単価は Amazon Bedrock pricing で確認し、判断が必要な作業は Opus 5.5、手順が明確な作業は Sonnet 5.5 という使い分けを検討する</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws/">https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws/</a></li>
+</ul>
+<h2 id="2-claude-sonnet-55-in-github-copilot">2. Claude Sonnet 5.5 in GitHub Copilot</h2>
+<p><strong>GitHub</strong>（2026-09-28） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHub は Anthropic の最新 Sonnet モデル Claude Sonnet 5.5 を GitHub Copilot で一般提供（GA）した。Copilot Pro・Pro+・Max・Business・Enterprise の利用者が VS Code や Copilot CLI などのモデルピッカーから選択でき、課金は従量課金（usage-based billing）でプロバイダーの定価（provider list pricing）が適用される。展開は段階的。</p>
+<ul>
+<li>提供条件: Copilot Pro / Pro+ / Max / Business / Enterprise が対象。展開は段階的（Rollout will be gradual）。Business / Enterprise では管理者のモデルポリシーで制御可能。Free プランは対象に記載なし。</li>
+<li>料金: 従量課金（usage-based billing）でプロバイダー定価（provider list pricing）を適用。具体的な単価・倍率は本文に無く、「Models and pricing for GitHub Copilot」を参照するよう案内。</li>
+<li>関係する人: GitHub Copilot を使う開発者、Copilot Business / Enterprise の管理者、開発ツールの費用を管理する IT 部門</li>
+<li>今日できること: VS Code や Copilot CLI などのモデルピッカーで Claude Sonnet 5.5 が表示されるか確認する（段階展開のため未表示なら後日再確認） ／ Business / Enterprise の管理者は Copilot settings のモデルポリシーで、このモデルを有効にするか明示的に無効にするかを決める ／ 従量課金の単価は「Models and pricing for GitHub Copilot」で確認する</li>
+<li>出典: <a href="https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot">https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot</a></li>
+</ul>
+<h2 id="3-v0350-v0350-rc1">3. v0.35.0 (v0.35.0-rc1)</h2>
+<p><strong>Ollama</strong>（2026-09-28） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: プレビュー・日本: 不明</p>
+<p>Ollama の v0.35.0-rc1 がプレリリースとして GitHub Releases に公開された。変更点は API での typical_p の非推奨化、System One scoring API の追加、macOS アプリの更新メニュー同期、MLX の pull 停滞時のリトライ上限など 7 件で、正式版ではない。</p>
+<ul>
+<li>提供条件: プレリリース（release candidate）。正式版 v0.35.0 の公開日は本文に無い。</li>
+<li>関係する人: Ollama をローカル・自社環境で運用する開発者、typical_p パラメータを使っている API 利用者</li>
+<li>今日できること: API リクエストで typical_p を使っている場合は非推奨化を踏まえて依存を見直す ／ 正式版ではなくプレリリースなので、本番環境への適用は v0.35.0 の正式公開を待つ</li>
+<li>出典: <a href="https://github.com/ollama/ollama/releases/tag/v0.35.0-rc1">https://github.com/ollama/ollama/releases/tag/v0.35.0-rc1</a></li>
+</ul>
+<h2 id="4-evolutionary-safety-of-recursive-self-improving-ai-taxonomy-risk-discovery-and-evaluation">4. Evolutionary Safety of Recursive Self-Improving AI: Taxonomy, Risk Discovery, and Evaluation</h2>
+<p><strong>arXiv（Chang Gong ほか 5 名）</strong>（2026-09-25） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>再帰的自己改善（RSI）を行う AI の安全性を「Evolutionary Safety」という観点から整理した論文が arXiv に投稿された。意図のドリフト、誤りの蓄積、経験の汚染、安全特性の劣化、評価者のドリフト、リスク伝播といった現象を整理し、エージェント状態・モデル状態・評価とフィードバック・計算基盤・メタレベル更新機構にまたがる分類と、修正・選択・認可・来歴・回復のガバナンス原則を提案している。</p>
+<ul>
+<li>提供条件: 研究論文（プレプリント）であり製品ではない。プロジェクト資料と提案する評価システムがリンク先で公開されているとしている。</li>
+<li>関係する人: AI 安全性・エージェント評価の研究者、自己改善型エージェントを設計する開発者</li>
+<li>今日できること: 自己改善・長期稼働するエージェントを設計している場合、論文が挙げる意図のドリフト・評価者のドリフト等の現象を自分の評価項目と照らして確認する</li>
+<li>出典: <a href="https://arxiv.org/abs/2609.31186">https://arxiv.org/abs/2609.31186</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-09-28/">← 2026-09-28</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
