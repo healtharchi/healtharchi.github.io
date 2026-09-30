@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-10-01 のAI公式アップデート（5件） | AI一次情報デイリー</title><meta name="description" content="2026-10-01 に確認した公式発表 5 件の要約と判定。主な項目: HydraFusion in VS Code and the GitHub Copilot app"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-10-01/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-10-01 のAI公式アップデート（5件）"><meta property="og:description" content="2026-10-01 に確認した公式発表 5 件の要約と判定。主な項目: HydraFusion in VS Code and the GitHub Copilot app"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-10-01/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-10-01 のAI公式アップデート（5件）"><meta name="twitter:description" content="2026-10-01 に確認した公式発表 5 件の要約と判定。主な項目: HydraFusion in VS Code and the GitHub Copilot app"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-09-30T22:41:29.000Z">2026-10-01</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-10-01 のAI公式アップデート（5件）</h1><p class="meta">2026-10-01 に確認した公式発表 5 件の要約と判定。主な項目: HydraFusion in VS Code and the GitHub Copilot app</p><p>公式発表 5 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-hydrafusion-in-vs-code-and-the-github-copilot-app">1. HydraFusion in VS Code and the GitHub Copilot app</h2>
+<p><strong>GitHub</strong>（2026-09-30） ／ 判定: <strong>△ 様子見</strong> ／ 重要度 3/5 ／ 提供: プレビュー・日本: 不明</p>
+<p>GitHub は、複数モデルを組み合わせて動く HydraFusion（research preview）を、Copilot CLI に加えて Visual Studio Code と GitHub Copilot app でも使えるようにした。HydraFusion はモデルピッカーに表示されるが単一モデルではなく、Single・Cascade・Critique の 3 つのワークフローから 1 つを選んで実行する。対象は Copilot Pro、Pro+、Business、Enterprise の利用者で、Business と Enterprise では管理者がプレビュー機能を有効にする必要がある。</p>
+<ul>
+<li>提供条件: research preview。Copilot Pro、Pro+、Business、Enterprise の利用者が対象。Business と Enterprise は管理者によるプレビュー機能の有効化が必要。VS Code は version 1.140 以降または VS Code Insiders。</li>
+<li>関係する人: 開発者、企業のIT部門</li>
+<li>今日できること: VS Code を version 1.140 以降（または VS Code Insiders）にして、Copilot Chat のモデルピッカーから HydraFusion を選ぶ。表示されなければ chat.copilot.hydraFusion.enabled を有効にする ／ GitHub Copilot app を最新版に更新し、Settings で「HydraFusion」を検索してオンにする ／ Copilot Business / Enterprise の管理者は、組織または企業の設定でプレビュー機能を有効にするか判断する</li>
+<li>出典: <a href="https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app">https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app</a></li>
+</ul>
+<h2 id="2-introducing-anthropic-models-on-amazon-bedrock-for-in-region-inference-in-seoul-and-singapore">2. Introducing Anthropic models on Amazon Bedrock for in-region inference in Seoul and Singapore</h2>
+<p><strong>AWS</strong>（2026-09-29） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Amazon Bedrock は、Seoul リージョンで Claude Opus 5 と Claude Sonnet 5、Singapore リージョンで Claude Sonnet 5 を、bedrock-runtime エンドポイントの in-region inference で提供開始した。推論リクエストとデータは呼び出したリージョン内で処理され、リージョン外に出ない。料金は呼び出したリージョンの標準 on-demand 料金に従う。</p>
+<ul>
+<li>提供条件: Seoul（ap-northeast-2）で Claude Opus 5 と Claude Sonnet 5、Singapore（ap-southeast-1）で Claude Sonnet 5。bedrock-runtime エンドポイントの in-region inference。日本のリージョンについては記載なし。</li>
+<li>料金: Billing follows standard on-demand pricing for the Region you call.（呼び出したリージョンの標準 on-demand 料金。金額の記載なし）</li>
+<li>関係する人: 開発者、企業のIT部門、金融・医療・公共分野のデータ所在地要件がある事業者</li>
+<li>今日できること: 韓国・シンガポールでデータ所在地要件がある場合、boto3 の bedrock-runtime クライアントを region_name=“ap-northeast-2” または “ap-southeast-1” で作り、anthropic.claude-sonnet-5 などの直接モデル ID で呼び出す ／ Amazon Bedrock コンソールの Playground で anthropic.claude-opus-5 を検索し、On-Demand を選んで試す ／ スループットはリージョンの容量とリージョンごとのサービスクォータに制限されるため、cross-Region inference profiles からの切り替え前にクォータを確認する ／ Amazon Bedrock User Guide の Regional availability by models でリージョンごとの提供状況を確認する</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/introducing-anthropic-models-on-amazon-bedrock-for-in-region-inference-in-seoul-and-singapore/">https://aws.amazon.com/blogs/machine-learning/introducing-anthropic-models-on-amazon-bedrock-for-in-region-inference-in-seoul-and-singapore/</a></li>
+</ul>
+<h2 id="3-amazon-bedrock-expands-claude-model-availability-to-in-country-inferencing-in-india">3. Amazon Bedrock expands Claude model availability to in-country inferencing in India</h2>
+<p><strong>AWS</strong>（2026-09-29） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Amazon Bedrock は、Claude Opus 5、Claude Sonnet 5、Claude Haiku 4.5 をインドで提供開始した。インドのリージョナルエンドポイントは geographic cross-Region inference で提供され、推論は ap-south-1 と ap-south-2 の間だけでルーティングされる。課金とクォータ消費は送信元リージョンのアカウントで計上される。</p>
+<ul>
+<li>提供条件: インド（Mumbai / Hyderabad、ap-south-1 / ap-south-2）の geographic cross-Region inference。bedrock-runtime エンドポイント。日本については記載なし。</li>
+<li>料金: Billing and quota consumption are tracked against your account in the source Region（送信元リージョンで計上。金額の記載なし）</li>
+<li>関係する人: 開発者、企業のIT部門、インドでデータ処理要件がある事業者</li>
+<li>今日できること: インド国内処理が必要な場合、region_name=“ap-south-1” の bedrock-runtime クライアントで in.anthropic.claude-sonnet-5 などのインド向け推論プロファイル ID を指定する ／ IAM ロールまたはユーザーに geographic cross-Region inference profile で呼び出す権限があるか確認する ／ Amazon Bedrock User Guide の Data retention で、自動安全分類器による人間レビューの条件を確認する</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/">https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/</a></li>
+</ul>
+<h2 id="4-disrupting-a-coordinated-model-distillation-campaign">4. Disrupting a coordinated model-distillation campaign</h2>
+<p><strong>OpenAI</strong>（2026-09-30） ／ 判定: <strong>△ 様子見</strong> ／ 重要度 3/5 ／ 提供: 不明・日本: 不明</p>
+<p>OpenAI は、同社モデルの保護された推論（protected reasoning）を抽出しようとする組織的な蒸留キャンペーンを検知し、7 月 28 日までに遮断したと発表した。暗号化の破りやデータベース侵害ではなく、モデルとのやり取りを操作する手口で、中核のクラスターを Kimi の開発元 Moonshot AI に関係する個人によるものと評価している。対応としてアカウントの停止・制限、他人の暗号化推論を再生して中身を復元できた経路の封鎖、推論を露出し得るストリーミング出力の検知と保留などを行った。</p>
+<ul>
+<li>提供条件: セキュリティ事案の公表。製品提供に関する発表ではない。</li>
+<li>関係する人: 開発者、企業のIT部門、経営層</li>
+<li>今日できること: 暗号化された推論（encrypted reasoning）を保存・再送する実装をしている場合、出典が「持ち運び・再生可能な推論成果物」に関連リスクがあるとしている点を踏まえて扱いを見直す</li>
+<li>出典: <a href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign">https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign</a></li>
+</ul>
+<h2 id="5-v0350">5. v0.35.0</h2>
+<p><strong>Ollama</strong>（2026-09-28） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Ollama v0.35.0 は、テキストではなく選択肢・確率・スコアを返す decision models を /v1/systemone で扱えるようにした。利用可能なモデルは Bespoke Labs の Nimble と Together AI の Tev1。あわせて設定画面の起動や MLX モデルのダウンロード停止などを修正した。</p>
+<ul>
+<li>提供条件: GitHub Releases で Latest として公開。</li>
+<li>関係する人: 開発者</li>
+<li>今日できること: Ollama を v0.35.0 に更新し、ollama pull nimble で Nimble を取得して /v1/systemone に choice 型の質問を送って試す ／ typical_p パラメータを送っている場合は、非推奨で警告が出るようになったため設定を見直す</li>
+<li>出典: <a href="https://github.com/ollama/ollama/releases/tag/v0.35.0">https://github.com/ollama/ollama/releases/tag/v0.35.0</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-09-30/">← 2026-09-30</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
