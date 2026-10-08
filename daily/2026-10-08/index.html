@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-10-08 のAI公式アップデート（5件） | AI一次情報デイリー</title><meta name="description" content="2026-10-08 に確認した公式発表 5 件の要約と判定。主な項目: Introducing Claude Haiku 5.5 on AWS"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-10-08/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-10-08 のAI公式アップデート（5件）"><meta property="og:description" content="2026-10-08 に確認した公式発表 5 件の要約と判定。主な項目: Introducing Claude Haiku 5.5 on AWS"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-10-08/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-10-08 のAI公式アップデート（5件）"><meta name="twitter:description" content="2026-10-08 に確認した公式発表 5 件の要約と判定。主な項目: Introducing Claude Haiku 5.5 on AWS"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-10-08T00:35:59.000Z">2026-10-08</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-10-08 のAI公式アップデート（5件）</h1><p class="meta">2026-10-08 に確認した公式発表 5 件の要約と判定。主な項目: Introducing Claude Haiku 5.5 on AWS</p><p>公式発表 5 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-introducing-claude-haiku-55-on-aws">1. Introducing Claude Haiku 5.5 on AWS</h2>
+<p><strong>AWS（Amazon Web Services）</strong>（2026-10-07） ／ 判定: <strong>◎ 今すぐ使う</strong> ／ 重要度 4/5 ／ 提供: 一般提供・日本: ○</p>
+<p>AWSは、Anthropicの Claude Haiku 5.5 が Amazon Bedrock と Claude Platform on AWS で利用可能になったと発表した。Anthropicによれば Claude 5.5 ファミリーで最速・最も効率的なモデルで、サブエージェントや大量・コスト重視の作業向けに作られ、多くのタスクで Claude Haiku 4.5 より約75パーセント安い。Amazon Bedrock では US/EU/AU/JP/Global の各 CRIS 推論プロファイルで当日から利用でき、Claude Platform on AWS では北米で提供される。</p>
+<ul>
+<li>提供条件: Amazon Bedrock では US/EU/AU/JP Geo CRIS と Global CRIS の推論プロファイルで当日から利用可（JP Geo CRIS (jp.) が明記）。AWS GovCloud (US) も対応。Claude Platform on AWS は北米で提供。対応リージョンの全一覧は Amazon Bedrock ドキュメント参照と案内。</li>
+<li>料金: 多くのタスクで Claude Haiku 4.5 より約75パーセント安い（出典の記述）。具体的な単価は出典に無く、Amazon Bedrock pricing を参照するよう案内。利用料は AWS の請求に載る。</li>
+<li>関係する人: AWS 上で生成AIアプリを作る開発者、企業のIT部門・クラウド管理者、AIコストを最適化したい事業責任者</li>
+<li>今日できること: Amazon Bedrock コンソールで Test → Playground を開き、Haiku 5.5 を選んでプロンプトを試す。 ／ 既存コードのモデルIDを global.anthropic.claude-haiku-5-5（または jp. などの Geo CRIS プロファイル）に差し替えて動作を確認する。 ／ 応答に thinking ブロックが先に来る場合があるため、テキストブロックを type で選ぶように実装を見直す。 ／ 料金は Amazon Bedrock pricing で確認し、Opus 5.5（計画・判断）と Haiku 5.5（大量の定型作業）の役割分担を検討する。</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/">https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/</a></li>
+</ul>
+<h2 id="2-v21293">2. v2.1.293</h2>
+<p><strong>Anthropic（claude-code リポジトリ）</strong>（2026-10-07） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 4/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Claude Code v2.1.293 がリリースされた。Claude Haiku 5.5（claude-haiku-5-5）が追加され、Anthropic API の既定の Haiku モデルになった。1M コンテキストで料金は $0.10/$0.50 per Mtok（100K を超えるプロンプトは $0.50/$2.50）。あわせてコンテキスト圧縮後に完了済み作業を取り消す不具合や HTTP MCP 接続のメモリリークなど多数の修正が含まれる。</p>
+<ul>
+<li>提供条件: Claude Code v2.1.293 のリリースノート。Haiku 5.5 は Anthropic API の既定 Haiku モデルとして追加。</li>
+<li>料金: Claude Haiku 5.5：$0.10/$0.50 per Mtok（100K を超えるプロンプトは $0.50/$2.50）。</li>
+<li>関係する人: Claude Code を使う開発者、Claude Code の mods・フック・ステータスラインを作る開発者、Team / Enterprise の管理者、Claude in Slack の管理者</li>
+<li>今日できること: Claude Code を v2.1.293 に更新し、/model で claude-haiku-5-5 が選べるか確認する。 ／ HTTP MCP サーバーを長時間使う構成では、メモリリーク修正の恩恵があるため更新を優先する。 ／ subagentStatusLine を使うスクリプトは、新しい agentType フィールドでカスタムサブエージェントを区別できるか見直す。 ／ /model の effort 設定が意図せず Low になっていないか確認する。</li>
+<li>出典: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.293">https://github.com/anthropics/claude-code/releases/tag/v2.1.293</a></li>
+</ul>
+<h2 id="3-claude-haiku-55-in-github-copilot">3. Claude Haiku 5.5 in GitHub Copilot</h2>
+<p><strong>GitHub</strong>（2026-10-07） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHubは、Anthropicの軽量モデル Claude Haiku 5.5 が GitHub Copilot で一般提供（GA）になったと発表した。サブエージェント、素早い編集、ターミナル作業など高頻度の作業向けに設計され、Copilot Pro / Pro+ / Max / Business / Enterprise の利用者がモデルピッカーから選べる。段階的に展開され、課金はプロバイダーの定価に基づく従量課金となる。</p>
+<ul>
+<li>提供条件: 対象プラン＝Copilot Pro / Pro+ / Max / Business / Enterprise。展開は段階的で、すぐに表示されない場合がある。Enterprise / Business では管理者のモデルポリシーで有効・無効を管理。</li>
+<li>料金: プロバイダーの定価（provider list pricing）に基づく従量課金（usage-based billing）。具体的な単価は出典に記載なし。詳細は「Models and pricing for GitHub Copilot」を参照するよう案内している。</li>
+<li>関係する人: 開発者（GitHub Copilot 利用者）、Copilot Business / Enterprise の管理者、開発チームのコスト管理担当</li>
+<li>今日できること: VS Code や Copilot CLI などのモデルピッカーで Claude Haiku 5.5 が選べるか確認する（段階展開のため表示されない場合は後で再確認）。 ／ Copilot Enterprise / Business の管理者は、Copilot settings のモデルポリシーで Claude Haiku 5.5 の有効・無効を確認する。 ／ サブエージェント・素早い編集・ターミナル作業など高頻度の軽い作業で Haiku 5.5 を試し、トークン消費を比べる。 ／ 従量課金の対象となるため、「Models and pricing for GitHub Copilot」で料金を確認する。</li>
+<li>出典: <a href="https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot">https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot</a></li>
+</ul>
+<h2 id="4-local-sandboxing-for-github-copilot-now-generally-available">4. Local sandboxing for GitHub Copilot now generally available</h2>
+<p><strong>GitHub</strong>（2026-10-07） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHubは、GitHub Copilot のローカルサンドボックス機能が GitHub Copilot CLI、GitHub Copilot app、Agent Host を使う VS Code セッションで一般提供（GA）になったと発表した。Copilot が起動するツールやコマンドは、開発者または組織が定めたポリシーに基づき、ファイルシステム・ネットワーク・認証情報などへのアクセスを制限された状態で実行される。Microsoft eXecution Container (MXC) により Windows・macOS・Linux のOS標準の制御に変換され、追加費用なしで利用できる。</p>
+<ul>
+<li>提供条件: 対象＝GitHub Copilot CLI、GitHub Copilot app、Agent Host を使う VS Code セッション。Windows・macOS・Linux 対応。ローカル MCP・言語サーバーへの適用は「対応している場合」の限定付き。</li>
+<li>料金: GitHub Copilot に追加費用なしで含まれる。</li>
+<li>関係する人: GitHub Copilot のエージェント機能を使う開発者、企業のセキュリティ・IT管理者、開発組織のガバナンス担当</li>
+<li>今日できること: 出典が案内する「About cloud and local sandboxes for GitHub Copilot」を読み、Copilot CLI・Copilot app・VS Code（Agent Host）でローカルサンドボックスを有効にする。 ／ エージェントが読み書きできるディレクトリと、インターネット・ローカルネットワーク・Git / GitHub CLI 認証情報へのアクセス方針を決める。 ／ 企業管理者は enterprise-managed settings でサンドボックスの必須化と、開発者が弱められないポリシーの強制を検討する。</li>
+<li>出典: <a href="https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available">https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available</a></li>
+</ul>
+<h2 id="5-introducing-playground-create-and-play-custom-games">5. Introducing Playground: Create and play custom games</h2>
+<p><strong>Google</strong>（2026-10-07） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 限定提供・日本: ×</p>
+<p>Googleは、テキストのプロンプトで指示するだけで独自のゲームを作り、遊び、共有できる実験的なゲームプラットフォーム「Playground」を発表した。コーディング経験は不要で、ブラウザ上でスマホやノートPCから遊べ、ゲームの公開前には安全審査が行われる。米国の18歳以上のユーザー向けに playground.google で当日公開され、作成機能のアクセス段階は Google AI のサブスクリプションに応じて展開される。今後 Unity Spark との連携も予定している。</p>
+<ul>
+<li>提供条件: 米国の18歳以上のユーザー向けに当日公開（playground.google）。作成機能のアクセス段階は Google AI サブスクリプションに応じて展開。Unity Spark 連携はテスト中でクローズドベータ近日開始。日本での提供時期は出典に記載なし。</li>
+<li>料金: 作成機能のアクセス段階は Google AI のサブスクリプションに基づいて展開されると記載。具体的な料金は出典に記載なし。</li>
+<li>関係する人: 一般利用者（ゲームを作って遊びたい人）、ゲーム開発者・クリエイター、教育・ホビー分野の関係者</li>
+<li>今日できること: 米国在住の18歳以上であれば playground.google にアクセスし、デモゲームを試す。 ／ Unity Spark に関心があれば unity.com/spark で情報を確認する（クローズドベータは近日開始）。 ／ 日本からの利用は出典に記載が無いため、提供地域の拡大を待つ。</li>
+<li>出典: <a href="https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/">https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-10-07/">← 2026-10-07</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
