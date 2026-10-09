@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-10-10 のAI公式アップデート（4件） | AI一次情報デイリー</title><meta name="description" content="2026-10-10 に確認した公式発表 4 件の要約と判定。主な項目: Copilot code review: New organization billing options and co"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-10-10/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-10-10 のAI公式アップデート（4件）"><meta property="og:description" content="2026-10-10 に確認した公式発表 4 件の要約と判定。主な項目: Copilot code review: New organization billing options and co"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-10-10/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-10-10 のAI公式アップデート（4件）"><meta name="twitter:description" content="2026-10-10 に確認した公式発表 4 件の要約と判定。主な項目: Copilot code review: New organization billing options and co"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-10-09T22:43:44.000Z">2026-10-10</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-10-10 のAI公式アップデート（4件）</h1><p class="meta">2026-10-10 に確認した公式発表 4 件の要約と判定。主な項目: Copilot code review: New organization billing options and co</p><p>公式発表 4 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-copilot-code-review-new-organization-billing-options-and-controls">1. Copilot code review: New organization billing options and controls</h2>
+<p><strong>GitHub</strong>（2026-10-08） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHub は Copilot code review の管理者向けに、課金とライセンスの新しい制御を追加した。Organization owner は、Copilot ライセンスを持つメンバーによるコードレビューの課金先をメンバー自身の Copilot entitlement ではなく組織（organization）に切り替えられる。また Organization owner と repository admin は、組織・enterprise 外のライセンス（個人ライセンスなど）からのレビュー依頼を禁止する設定を有効にできる。</p>
+<ul>
+<li>提供条件: 対象は Organization owner および repository admin。Organization への課金は、組織で AI Credits paid usage が有効化されていることが必要。提供地域の記載なし。</li>
+<li>料金: Organization 課金を選ぶと、リポジトリを所有する組織に課金される。組織で AI Credits paid usage を有効にする必要があり、任意で budget を設定できる。Member（既定）ではメンバー自身の Copilot entitlement に課金され、quota が尽きるとコードレビューは失敗する。具体的な金額の記載は無い。</li>
+<li>関係する人: GitHub Organization の owner・管理者、repository admin、Copilot code review を使う開発チーム、企業のIT部門・コスト管理担当</li>
+<li>今日できること: organization settings の Copilot -&gt; Policies で「Choose how members with a Copilot license are billed」を開き、Member（既定）か Organization かを選ぶ。 ／ Organization 課金にする場合は、組織で AI Credits paid usage を有効化し、必要なら budget を設定する。 ／ 組織・enterprise 外の Copilot ライセンス（個人ライセンスなど）からのレビュー依頼を防ぎたい場合は、「Only allow Copilot code review to be triggered by authorized users」を有効にする（組織レベルで有効にすると repository admin は無効化できない）。 ／ 個人リポジトリ・自動レビュー・API リクエストへの適用は「Reviews requested with an external Copilot license」で確認する。</li>
+<li>出典: <a href="https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls">https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls</a></li>
+</ul>
+<h2 id="2-医師向け検索ツールevidence-finderにsakana-namazuを導入日本仕様のaiを医療の現場へ">2. 医師向け検索ツール「Evidence Finder」にSakana Namazuを導入：日本仕様のAIを、医療の現場へ</h2>
+<p><strong>Sakana AI</strong>（2026-10-09） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>Sakana AI が開発する日本仕様の LLM「Sakana Namazu」が、アイリス株式会社の医師向けエビデンス検索ツール「Evidence Finder」に採用された。アイリス独自のアルゴリズムが関連文献を選び、文献の比較・統合と回答生成を Namazu が担う構成で、Namazu を用いた Evidence Finder の評価用モデルは 2026年2月の第120回医師国家試験で正解率 96.4% を記録したとしている。</p>
+<ul>
+<li>提供条件: Evidence Finder への採用は完了として記載されている。Sakana Namazu 自体の一般提供の形態・対象・条件の記載は無く、「国内で推論が完結する基盤」は整備中と書かれている。</li>
+<li>関係する人: 医療機関・医師、医療AI・ヘルスケア事業者、日本語LLMの導入を検討する企業のIT部門、LLMを自社サービスに組み込む開発者</li>
+<li>今日できること: 各業界での AI 導入を検討している場合は、本文で案内されている Sakana AI の相談窓口（「こちら」）から相談する。 ／ 自社サービスへの LLM 組み込みを検討する際は、Evidence Finder の構成（文献選定は自社アルゴリズム、比較・統合と回答生成は Namazu、引用文献の実在性を自動検証する Verify 機能）を役割分担の例として参照する。</li>
+<li>出典: <a href="https://sakana.ai/namazu-aillis/">https://sakana.ai/namazu-aillis/</a></li>
+</ul>
+<h2 id="3-01621">3. 0.162.1</h2>
+<p><strong>OpenAI</strong>（2026-10-09） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>OpenAI の Codex リポジトリで、Codex CLI のリリース rust-v0.162.1（0.162.1）が GitHub Releases に公開された。内容はバグ修正2件で、複数行の非同期質問による TUI クラッシュの修正と、起動中のバックグラウンドサーバーの機能設定と CLI 既定値の差異による起動失敗の修正が含まれる。</p>
+<ul>
+<li>提供条件: GitHub Releases 上で Latest として公開されているリリース。提供地域・対象プランの記載なし。</li>
+<li>関係する人: Codex CLI を使う開発者</li>
+<li>今日できること: 複数行の非同期質問で TUI がクラッシュする、またはバックグラウンドサーバー稼働中に起動に失敗する症状があれば、修正が入った 0.162.1 に更新する。 ／ Full Changelog（rust-v0.162.0…rust-v0.162.1）で変更の全体を確認する。</li>
+<li>出典: <a href="https://github.com/openai/codex/releases/tag/rust-v0.162.1">https://github.com/openai/codex/releases/tag/rust-v0.162.1</a></li>
+</ul>
+<h2 id="4-プレス発表-aiセーフティ評価の実証および評価環境整備の取組について報告会を開催">4. プレス発表 AIセーフティ評価の実証および評価環境整備の取組について報告会を開催</h2>
+<p><strong>独立行政法人情報処理推進機構（IPA）AIセーフティ・インスティテュート（AISI）</strong>（2026-10-09） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>AIセーフティ・インスティテュート（AISI）が2026年10月7日に「AISI事業実証ワーキンググループ」2026年度上期報告会と「AIセーフティ評価環境 検討タスクフォース」総会を開催したと発表した。両イベントで延べ220名が出席し、ヘルスケア・ロボティクス・データ品質・適合性評価・教育・ジオAIの各サブワーキンググループの活動状況と、OSSとして公開している「AIセーフティ評価環境」の概要が共有された。ゲストスピーカーとしてAnthropic社とOpenAI社が登壇した。</p>
+<ul>
+<li>提供条件: 「AIセーフティ評価環境」は2025年9月にOSSとして公開済み。ヘルスケア領域のガイド（2026年4月）、AIロボティクスのガイドとデータ品質チェックリスト（今年度上期）も公開済みと記載。ジオAI SWGのガイドライン・マニュアルは公開を目指す段階。</li>
+<li>関係する人: AIシステムの開発者・提供者、医療機関・ロボティクス・教育分野でAI導入を進める担当者、企業のAIガバナンス・リスク管理担当</li>
+<li>今日できること: AISI公式ウェブサイトで、2026年度「AISI事業実証WG」上期報告会と「AIセーフティ評価環境 検討タスクフォース」総会の詳細を確認する ／ 該当分野であれば「ヘルスケア領域におけるAIセーフティ評価観点ガイド」「AIロボティクスに関するセーフティ評価観点ガイド」、データ品質SWGのチェックリストを確認する ／ OSSとして公開されている「AIセーフティ評価環境」を自社のAIセーフティ評価に使えるか確認する</li>
+<li>出典: <a href="https://www.ipa.go.jp/pressrelease/2026/press20261009.html">https://www.ipa.go.jp/pressrelease/2026/press20261009.html</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-10-09/">← 2026-10-09</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
