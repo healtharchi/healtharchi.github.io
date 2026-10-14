@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-10-15 のAI公式アップデート（7件） | AI一次情報デイリー</title><meta name="description" content="2026-10-15 に確認した公式発表 7 件の要約と判定。主な項目: v0.40.4"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-10-15/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-10-15 のAI公式アップデート（7件）"><meta property="og:description" content="2026-10-15 に確認した公式発表 7 件の要約と判定。主な項目: v0.40.4"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-10-15/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-10-15 のAI公式アップデート（7件）"><meta name="twitter:description" content="2026-10-15 に確認した公式発表 7 件の要約と判定。主な項目: v0.40.4"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-10-14T22:42:32.000Z">2026-10-15</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-10-15 のAI公式アップデート（7件）</h1><p class="meta">2026-10-15 に確認した公式発表 7 件の要約と判定。主な項目: v0.40.4</p><p>公式発表 7 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-v0404">1. v0.40.4</h2>
+<p><strong>Ollama</strong> ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Ollama v0.40.4 が公開され、判定用モデル（decision models）を ollama run から直接使えるようになった。はい／いいえの質問、ラベル分類、ルーブリックによる採点ができる。ollama launch codex のモデル選択にローカルの Ollama モデルが表示されるなどの変更も含まれる。</p>
+<ul>
+<li>提供条件: GitHub の Latest リリース。地域の記載なし。</li>
+<li>料金: ollama launch は有料プランに上げなくても usage credits で使えるようになった（金額の記載なし）。</li>
+<li>関係する人: 開発者、ローカルLLMの利用者</li>
+<li>今日できること: Ollama を v0.40.4 に更新し、ollama run nimble –ask で問い合わせ文の判定を試す ／ ollama launch codex を使っている場合、Codex CLI 内の /model でローカルの Ollama モデルに切り替えられるか確認する</li>
+<li>出典: <a href="https://github.com/ollama/ollama/releases/tag/v0.40.4">https://github.com/ollama/ollama/releases/tag/v0.40.4</a></li>
+</ul>
+<h2 id="2-hydrafusion-updates-and-new-max-option">2. HydraFusion updates and new Max option</h2>
+<p><strong>GitHub</strong>（2026-10-14） ／ 判定: <strong>△ 様子見</strong> ／ 重要度 3/5 ／ 提供: プレビュー・日本: 不明</p>
+<p>GitHub Copilot の HydraFusion（複数モデルを組み合わせて1つの回答を作る機能）が更新され、より深い推論向けの HydraFusion Max が追加された。モデルの候補に Claude Opus 5.5、GPT-6 Astra、GPT-6.1 Sol、GPT-6 Luna が加わり、工程ごとに推論の深さを変えるようになった。どちらも研究プレビューのまま。</p>
+<ul>
+<li>提供条件: 研究プレビュー。Copilot Pro、Pro+、Business、Enterprise で、試験的またはプレビュー機能を有効にした場合に、組織のモデルポリシーに従って使える。</li>
+<li>関係する人: 開発者、企業のIT部門</li>
+<li>今日できること: Copilot Pro、Pro+、Business、Enterprise を使っている場合、試験的またはプレビュー機能を有効にして HydraFusion と HydraFusion Max を試す ／ Business・Enterprise の管理者は、組織のモデルポリシーで HydraFusion が使える状態か確認する ／ HydraFusion のドキュメントで使い方を確認し、HydraFusion discussion でフィードバックを送る</li>
+<li>出典: <a href="https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option">https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option</a></li>
+</ul>
+<h2 id="3-anthropic-opens-singapore-office-and-signs-mou-with-the-government-of-singapore">3. Anthropic opens Singapore office and signs MOU with the Government of Singapore</h2>
+<p><strong>Anthropic</strong>（2026-10-14） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Anthropic がシンガポールにアジア太平洋で5か所目となるオフィスを開設し、シンガポールのデジタル開発・情報省と覚書（MOU）を結んだ。覚書はAIの安全性・セキュリティ・モデル評価、AI導入とその影響の研究、官民での責任あるAI導入での協力分野を定めている。</p>
+<ul>
+<li>提供条件: シンガポールのオフィスは開設済みで採用中。Amazon Bedrock での域内推論は規制業種向けの例として記載されており、対象リージョンの詳細は記載なし。</li>
+<li>関係する人: 企業のIT部門、経営層、政策担当者</li>
+<li>今日できること: 金融など規制業種でデータ処理要件がある場合、Amazon Bedrock での Claude の域内推論（in-region inference）が使えるか確認する</li>
+<li>出典: <a href="https://www.anthropic.com/news/singapore-office-opening">https://www.anthropic.com/news/singapore-office-opening</a></li>
+</ul>
+<h2 id="4-amp-puts-ai-agents-to-work-beyond-code-with-openai-models">4. Amp puts AI agents to work beyond code with OpenAI models</h2>
+<p><strong>OpenAI</strong>（2026-10-14） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>OpenAI が、AIエージェント製品 Amp による OpenAI モデルの活用事例を紹介した。Amp は Sign in with ChatGPT 連携、GPT-6 Astra による文章・デザイン作業、GPT-Live-1 を使った音声アシスタント「Calling Puck」、Ultrafast モードの試験利用について語っている。</p>
+<ul>
+<li>提供条件: 顧客事例の紹介記事。Ultrafast モードは Amp が試験中と記載。提供地域や対象プランの記載なし。</li>
+<li>関係する人: 開発者、AIエージェントを業務に使う企業</li>
+<li>今日できること: Amp を使っている場合、Sign in with ChatGPT 連携で OpenAI モデル（GPT-6 Astra を含む）を使えるか確認する ／ Amp の Puck で、バグ調査用エージェントの起動や過去の会話の検索を試す</li>
+<li>出典: <a href="https://openai.com/index/amp-beyond-coding">https://openai.com/index/amp-beyond-coding</a></li>
+</ul>
+<h2 id="5-how-third-moment-research-runs-10000-agents-for-36-hours">5. How Third Moment Research runs 10,000 agents for 36+ hours</h2>
+<p><strong>OpenAI</strong>（2026-10-14） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>OpenAI が、Third Moment Research による OpenAI モデルと Codex の活用事例を紹介した。同社は Codex と GPT-6 Astra、GPT-6 Sol、GPT-6.1 Sol を使い、1万のエージェントを同時に36〜48時間の調査に走らせ、環境の安全性テストに Daybreak を使っている。</p>
+<ul>
+<li>提供条件: 顧客事例の紹介記事。GPT-6 Luna は同社がテスト中と記載。提供条件や地域の記載なし。</li>
+<li>関係する人: 開発者、AIエージェントを大規模に運用する企業</li>
+<li>今日できること: 長時間処理の完了を待つ間、エージェントが状態確認を繰り返してトークンを消費していないか、実行記録を確認する ／ タスクを途中で止めるエージェントに対し、実行記録を見て再試行・終了・人のレビューへの回付を判断する外側の仕組みを検討する</li>
+<li>出典: <a href="https://openai.com/index/third-moment-research">https://openai.com/index/third-moment-research</a></li>
+</ul>
+<h2 id="6-the-eus-next-chapter-in-ai-is-agentic">6. The EU’s next chapter in AI is agentic</h2>
+<p><strong>OpenAI</strong>（2026-10-14） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>OpenAI Economic Research が、EU の企業と中小企業でのエージェント型AI（Codex と ChatGPT Work）の利用状況を分析したレポートを公表した。利用は広がっている一方、国ごとの差や、EUの先進企業と世界の先進企業の利用の深さの差が大きいとしている。</p>
+<ul>
+<li>提供条件: 利用状況の分析レポートで、製品の提供条件の発表ではない。対象はEUのサンプル。</li>
+<li>関係する人: 経営層、企業のIT部門、政策担当者</li>
+<li>今日できること: 出典ページからレポートのPDFをダウンロードし、国別・企業規模別の数値を確認する</li>
+<li>出典: <a href="https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic">https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic</a></li>
+</ul>
+<h2 id="7-preparing-for-the-2026-us-midterms">7. Preparing for the 2026 US midterms</h2>
+<p><strong>Anthropic</strong>（2026-10-14） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 発表のみ・日本: ×</p>
+<p>Anthropic が、2026年の米国中間選挙に向けた Claude の選挙関連の安全対策を公表した。米国の Claude.ai での政治・選挙に関する会話の分析、Democracy Works の公式投票情報を回答に取り込む機能、政治的な偏りの評価、不正利用を検知する新しい分類器などを説明している。</p>
+<ul>
+<li>提供条件: Democracy Works の投票情報の取り込みは今月後半から Claude.ai の米国ユーザー向け。</li>
+<li>関係する人: 一般利用者、政策担当者、AIの安全性に関心のある企業</li>
+<li>今日できること: 選挙関連で Claude を使う団体は、Anthropic が公開した選挙運動向けガイドで禁止事項を確認する</li>
+<li>出典: <a href="https://www.anthropic.com/news/2026-us-midterms">https://www.anthropic.com/news/2026-us-midterms</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-10-14/">← 2026-10-14</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
