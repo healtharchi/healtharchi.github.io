@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-10-17 のAI公式アップデート（6件） | AI一次情報デイリー</title><meta name="description" content="2026-10-17 に確認した公式発表 6 件の要約と判定。主な項目: v2.1.301"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-10-17/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-10-17 のAI公式アップデート（6件）"><meta property="og:description" content="2026-10-17 に確認した公式発表 6 件の要約と判定。主な項目: v2.1.301"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-10-17/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-10-17 のAI公式アップデート（6件）"><meta name="twitter:description" content="2026-10-17 に確認した公式発表 6 件の要約と判定。主な項目: v2.1.301"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-10-16T22:47:46.000Z">2026-10-17</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-10-17 のAI公式アップデート（6件）</h1><p class="meta">2026-10-17 に確認した公式発表 6 件の要約と判定。主な項目: v2.1.301</p><p>公式発表 6 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-v21301">1. v2.1.301</h2>
+<p><strong>Anthropic</strong>（2026-10-15） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Claude Code v2.1.301 が GitHub で公開された。無人リトライ運用で利用上限の解除が遠い場合に待たずに打ち切る環境変数 CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS の追加、OpenTelemetry の tool_decision イベントへの classifier_verdict / permission_mode / classifier_category の追加、vim モードの % 移動などが加わった。worktree の誤削除、fable モデル別名のエラー、Grep/Glob の誤った「該当なし」など多数の修正も含む。</p>
+<ul>
+<li>提供条件: GitHub Releases で 15 Oct 19:22 に公開。配布経路や更新方法の記述はリリースノートに無い。VS Code 関連の一部項目は Pro / Max プラン向け。</li>
+<li>関係する人: Claude Code を使う開発者、Claude Code を無人・自動で動かす運用担当、OpenTelemetry やセルフホストランナーで管理する企業の管理者</li>
+<li>今日できること: CLAUDE_CODE_RETRY_WATCHDOG で無人リトライ運用をしているなら、CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS を設定し、リセットが遠い利用上限で待ち続けないようにする。 ／ OpenTelemetry で tool_decision イベントを集計しているなら classifier_verdict と permission_mode を集計に加え、必要なら OTEL_LOG_TOOL_DETAILS=1 で classifier_category も記録する。 ／ セルフホストランナーで管理設定により MCP サーバーを制限している場合は deniedMcpServers で不要なツールを止める。 ／ vim モード利用者は % で対応する括弧へ移動できることを確認する（d/c/y との組み合わせも可）。</li>
+<li>出典: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.301">https://github.com/anthropics/claude-code/releases/tag/v2.1.301</a></li>
+</ul>
+<h2 id="2-v0405">2. v0.40.5</h2>
+<p><strong>Ollama</strong>（2026-10-14） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Ollama v0.40.5 が公開され、NVIDIA Nemotron 3.5 Super（120B の Mamba-2/Transformer ハイブリッド MoE・12B アクティブ・C-RADIO ビジョンエンコーダ・1M トークンのコンテキスト）に対応した。コンパクト版の Nemotron 3.5 Bolt（74B・9B アクティブ・24GB の NVIDIA GPU 向け）も紹介されている。Decision models が ollama.com のクラウドで clef:cloud / clef-flash:cloud として使えるようになり、OpenAI 互換 Responses API のカスタムツール呼び出しを含む会話継続の不具合も修正された。</p>
+<ul>
+<li>提供条件: GitHub Releases で 14 Oct 19:45 に公開（Latest）。Nemotron 3.5 Super の実行コマンドは記載があるが、Bolt の Ollama 上での名前・実行コマンドは書かれていない。</li>
+<li>関係する人: ローカル LLM を使う開発者、24 GB クラスの NVIDIA GPU で推論したい人、ollama.com cloud を使う利用者</li>
+<li>今日できること: Ollama を v0.40.5 にして ollama run nemotron-3.5-super を実行する。 ／ ローカルに取得せずに Decision models を試すなら clef:cloud または clef-flash:cloud を指定して ollama.com cloud で動かす。 ／ OpenAI 互換の Responses API でカスタムツール呼び出しを含む会話の継続に失敗していたなら、v0.40.5 で再検証する。</li>
+<li>出典: <a href="https://github.com/ollama/ollama/releases/tag/v0.40.5">https://github.com/ollama/ollama/releases/tag/v0.40.5</a></li>
+</ul>
+<h2 id="3-stack-overflow-for-agents-triples-signups-with-chatgpt-plugin">3. Stack Overflow for Agents triples signups with ChatGPT plugin</h2>
+<p><strong>OpenAI</strong>（2026-10-16） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>OpenAI が Stack Overflow の導入事例を公開した。2 名のエンジニアが Codex を使って「Stack Overflow for Agents」を数週間で構築し、ChatGPT plugin を用意したところ登録者が一晩で 3 倍、エージェント作成数が最大 10 倍になったとしている。企業向け製品のコネクタ開発も Codex で 3〜6 週間から 4 日に短縮したという。</p>
+<ul>
+<li>提供条件: 導入事例の記事であり、製品の提供条件・地域の記述は無い。</li>
+<li>関係する人: 開発者（Codex や ChatGPT plugin を使う人）、プロダクト責任者、スタートアップの経営層</li>
+<li>今日できること: 自社サービスを ChatGPT 利用者に届ける手段として、MCP 設定より手順の少ない ChatGPT plugin を検討する。 ／ コネクタ開発のような定型の開発作業で、Codex に開発環境と計画を渡して協働する進め方を試す。</li>
+<li>出典: <a href="https://openai.com/index/stack-overflow-chatgpt-plugin">https://openai.com/index/stack-overflow-chatgpt-plugin</a></li>
+</ul>
+<h2 id="4-metaexp-learning-to-self-improve-through-experience-via-verifiable-cross-task-environment-scaling">4. MetaExp: Learning to Self-Improve through Experience via Verifiable Cross-Task Environment Scaling</h2>
+<p><strong>arXiv（Renhao Li ほか 6 名）</strong>（2026-10-15） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>言語モデルエージェントが対話のフィードバックを再利用可能な「経験」に変える能力そのものを学習させるフレームワーク「MetaExp」の論文が arXiv に投稿された。検証可能なタスク族（Shared-Tool と Shared-Workflow の 2 設計）で環境を拡張し、1,000 タスク族から集めた 4,956 本の軌跡で Qwen3.5-122B-A10B をファインチューニングしたところ、パラメータを凍結したままの下流の進化で SpreadsheetBench +8.5、APEX-Agents 最大 +2.3、AutomationBench +14.8 の改善を報告している。</p>
+<ul>
+<li>提供条件: 研究論文であり、コードやモデルの公開についての記述は概要に無い。</li>
+<li>関係する人: AI エージェントの研究者、エージェントの継続学習を設計する開発者</li>
+<li>今日できること: arXiv の View PDF または HTML (experimental) で論文本文を読み、ベースラインとの比較条件を確認する。</li>
+<li>出典: <a href="https://arxiv.org/abs/2610.21492">https://arxiv.org/abs/2610.21492</a></li>
+</ul>
+<h2 id="5-multi-repository-support-and-other-improvements-for-github-in-slack-and-teams">5. Multi-repository support and other improvements for GitHub in Slack and Teams</h2>
+<p><strong>GitHub</strong>（2026-10-15） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Slack と Microsoft Teams で使う @GitHub が、1 つの会話の中で複数のリポジトリをまたいで issue 作成・PR 作成・バグ調査をできるようになった。あわせて、メッセージの途中でもメンションできる、リポジトリの切り替えが滑らかになる、Slack の共有メッセージやスレッドを文脈として使える、エラー削減や中断からの復帰といった改善が加わった。</p>
+<ul>
+<li>提供条件: Slack と Microsoft Teams の @GitHub が対象。対象プランや地域の記述は無い。「共有メッセージやスレッドを文脈に使う」改善は Slack についてのみ記載。</li>
+<li>関係する人: Slack や Teams で GitHub Copilot を使う開発チーム、複数リポジトリを横断して管理するエンジニアリングマネージャー</li>
+<li>今日できること: Slack / Teams で @GitHub に、リポジトリ名を含めた依頼（特定リポジトリへの issue 作成、バグ修正と PR 作成、複数リポジトリの open PR 一覧）を試す。 ／ Slack ではスレッドやメッセージを共有して @GitHub の文脈として使い、内容のコピー＆ペーストをやめる。 ／ メッセージの途中で @GitHub をメンションしても動くことを確認する。</li>
+<li>出典: <a href="https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates">https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates</a></li>
+</ul>
+<h2 id="6-diviner-agentic-rca-with-human-governed-adaptation-for-large-scale-infrastructure">6. Diviner: Agentic RCA with Human-Governed Adaptation for Large-Scale Infrastructure</h2>
+<p><strong>arXiv（Pradipta Ghosh ほか 9 名）</strong>（2026-10-15） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>Meta で稼働する障害の根本原因分析（RCA）エージェントシステム「Diviner」の論文が arXiv に投稿された。Encode・Execute・Evaluate・Adapt の 4 段階の信頼性ライフサイクルで構成され、レビュー済みインシデントとサービスオーナーの知見をスキル・ワークフロー・型付きツール・知識グラフに符号化し、運用知識の更新は再生・品質チェック・オーナー承認を経た場合だけ取り込む。</p>
+<ul>
+<li>提供条件: 研究論文であり、システムの公開や提供についての記述は無い。</li>
+<li>関係する人: SRE・インフラ運用担当、障害対応エージェントを設計する開発者、AI エージェントの研究者</li>
+<li>今日できること: arXiv の View PDF または HTML (experimental) で論文本文を読む。 ／ 障害対応エージェントを設計するなら、運用知識の更新を再生・品質チェック・オーナー承認の後にだけ取り込む Adapt 段階の方式を参考にする。</li>
+<li>出典: <a href="https://arxiv.org/abs/2610.21281">https://arxiv.org/abs/2610.21281</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-10-16/">← 2026-10-16</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
