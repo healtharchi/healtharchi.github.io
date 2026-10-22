@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-10-23 のAI公式アップデート（4件） | AI一次情報デイリー</title><meta name="description" content="2026-10-23 に確認した公式発表 4 件の要約と判定。主な項目: Global default for Copilot features generally available"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-10-23/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-10-23 のAI公式アップデート（4件）"><meta property="og:description" content="2026-10-23 に確認した公式発表 4 件の要約と判定。主な項目: Global default for Copilot features generally available"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-10-23/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-10-23 のAI公式アップデート（4件）"><meta name="twitter:description" content="2026-10-23 に確認した公式発表 4 件の要約と判定。主な項目: Global default for Copilot features generally available"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-10-22T22:43:05.000Z">2026-10-23</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-10-23 のAI公式アップデート（4件）</h1><p class="meta">2026-10-23 に確認した公式発表 4 件の要約と判定。主な項目: Global default for Copilot features generally available</p><p>公式発表 4 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-global-default-for-copilot-features-generally-available">1. Global default for Copilot features generally available</h2>
+<p><strong>GitHub</strong>（2026-10-22） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Copilot Business と Copilot Enterprise のプランで、一般提供の Copilot 機能とクライアント機能に適用されるグローバル既定ポリシーの適用が始まった。10月26日にかけて段階的に展開され、未設定のままの対象機能はグローバル既定に従って設定される。管理者が個別に明示した設定は保持される。</p>
+<ul>
+<li>提供条件: Copilot Business と Copilot Enterprise のプランが対象。10月26日にかけて段階的に適用され、企業・組織ごとに反映時期が異なる場合がある。対象・例外は default availability のドキュメントを参照するよう案内されている。</li>
+<li>関係する人: 企業のIT部門、GitHub の Enterprise／Organization 管理者、開発チームのリーダー</li>
+<li>今日できること: AI Controls → Copilot → Default policy for new features で、選ばれているグローバル既定（Enabled／Disabled／Let organizations decide）を確認する ／ 「Features &amp; clients」と「MCP servers in Copilot」で Unconfigured のままの機能を洗い出し、意図した値を個別に明示する ／ 10月26日までの適用前に、無効にしておきたい機能を個別に Disabled にしておく</li>
+<li>出典: <a href="https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available">https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available</a></li>
+</ul>
+<h2 id="2-announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus">2. Announcing new ways to customize models with SageMaker AI, without managing GPUs</h2>
+<p><strong>AWS</strong>（2026-10-22） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Amazon SageMaker AI のサーバーレスなモデルカスタマイズに、training sessions が一般提供として加わった。利用者は独自の損失関数や報酬信号を含む学習ループを自分で書き、GPU の割り当て・分散実行・障害復旧・チェックポイント保存は SageMaker AI が担う。対応モデルは gpt-oss-20b、gemma-4-31B-it、Qwen3.6-27B、Qwen3.8-27B。</p>
+<ul>
+<li>提供条件: training sessions は一般提供。対応モデルは gpt-oss-20b、gemma-4-31B-it、Qwen3.6-27B、Qwen3.8-27B。提供リージョンの一覧は出典に記載なし。IDE 利用は Linux または macOS と Python 3.10〜3.12 が条件。</li>
+<li>料金: SageMaker AI が処理したトークンに対する従量課金。報酬関数が利用者の環境で採点している間は課金が止まり、容量の予約は不要。具体的な単価は出典に記載なし。</li>
+<li>関係する人: 機械学習エンジニア、AIエージェントを開発する開発者、企業のデータサイエンス部門</li>
+<li>今日できること: Linux か macOS の Python 3.10〜3.12 環境に SageMaker Python SDK を入れ、training sessions の cookbook を取得して例を動かす ／ SageMaker Studio でノートブックを開き、Kiro・Claude Code・Codex・Copilot のいずれかのコーディングエージェントを接続してエージェントスキルを試す ／ カスタマイズしたいモデルが gpt-oss-20b、gemma-4-31B-it、Qwen3.6-27B、Qwen3.8-27B の対応範囲に入っているか確認する</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/">https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/</a></li>
+</ul>
+<h2 id="3-donating-agent-skills-to-the-agentic-ai-foundation">3. Donating Agent Skills to the Agentic AI Foundation</h2>
+<p><strong>Anthropic</strong>（2026-10-22） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Anthropic は、AIエージェントに専門知識と作業手順を与えるオープン標準 Agent Skills を、Linux Foundation 傘下の Agentic AI Foundation（AAIF）に寄贈した。名称・ロゴ・GitHub organization・agentskills.io ドメインが移り、今後は AAIF が中立的な置き場となる。AAIF に参加しなくても標準の利用や貢献は続けられる。</p>
+<ul>
+<li>提供条件: オープン標準のため提供地域の概念は無く、出典に地域の記載も無い。AAIF に参加しなくても利用・貢献できる。</li>
+<li>関係する人: AIエージェントを作る開発者、スキルを書いて配布する人、企業のIT部門</li>
+<li>今日できること: agentskills.io で Agent Skills の仕様を読む ／ 仕様変更案に意見がある場合はプロジェクトの Discord に参加してフィードバックする ／ GitHub の議論に参加し、版管理リリースや提案プロセスの動きを追う</li>
+<li>出典: <a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation">https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation</a></li>
+</ul>
+<h2 id="4-open-call-for-guest-investigators-in-the-life-sciences">4. Open call for guest investigators in the life sciences</h2>
+<p><strong>Anthropic</strong>（2026-10-22） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 限定提供・日本: 不明</p>
+<p>Anthropic は、ライフサイエンス分野の研究者を「guest investigators」として募集すると発表した。大学・非営利団体・政府系研究所の研究責任者とその研究グループが対象で、8〜12週間 Anthropic の研究者と共同で取り組み、モデルとハーネスは無償で使える。応募期間は約 14 日間。</p>
+<ul>
+<li>提供条件: 大学・非営利団体・政府系研究所の研究責任者とその研究グループが対象の公募。応募期間は約 14 日間。応募者の国・地域の条件は出典に記載なし。</li>
+<li>料金: Anthropic がモデルとハーネスを参加者の費用負担なしで動かす。</li>
+<li>関係する人: ライフサイエンス分野の研究者、大学・公的研究機関</li>
+<li>今日できること: 8〜12週間で予備的な成果が出せる研究課題を選び、出典ページの応募フォームから提案を出す ／ 応募資料には公開情報だけを含める ／ 生物学向けモデルへの直接アクセスが目的なら Life Sciences Verification Program への応募を検討する</li>
+<li>出典: <a href="https://www.anthropic.com/news/open-call-guest-investigators-life-sciences">https://www.anthropic.com/news/open-call-guest-investigators-life-sciences</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-10-22/">← 2026-10-22</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
