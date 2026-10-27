@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-10-28 のAI公式アップデート（5件） | AI一次情報デイリー</title><meta name="description" content="2026-10-28 に確認した公式発表 5 件の要約と判定。主な項目: v0.40.12"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-10-28/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-10-28 のAI公式アップデート（5件）"><meta property="og:description" content="2026-10-28 に確認した公式発表 5 件の要約と判定。主な項目: v0.40.12"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-10-28/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-10-28 のAI公式アップデート（5件）"><meta name="twitter:description" content="2026-10-28 に確認した公式発表 5 件の要約と判定。主な項目: v0.40.12"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-10-27T22:49:50.000Z">2026-10-28</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-10-28 のAI公式アップデート（5件）</h1><p class="meta">2026-10-28 に確認した公式発表 5 件の要約と判定。主な項目: v0.40.12</p><p>公式発表 5 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-v04012">1. v0.40.12</h2>
+<p><strong>Ollama</strong>（2026-10-27） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Ollama v0.40.12 が公開され、Liquid AI の小型モデル群 LFM3（lfm3 / lfm3-vl / lfm3-audio / lfm3-omni）と、LFM3 を土台にした 2B サイズの d1 決定モデルが追加された。この版では lfm3 と d1 2b は Apple ハードウェアのみ対応で、Linux/Windows は近日対応予定。Apple silicon での Gemma 4 などのプロンプト処理高速化や、MLX での DFlash2 ドラフトモデルによる投機的デコードにも対応した。</p>
+<ul>
+<li>提供条件: lfm3 と d1 2b はこの版では Apple ハードウェアのみ対応。Linux/Windows は「近日対応予定」。</li>
+<li>関係する人: ローカルで LLM を動かす開発者、Mac で小型モデルを試したい利用者</li>
+<li>今日できること: Apple ハードウェアなら ollama run lfm3 で LFM3 を試す ／ テキストや画像についての判定用途は、ollama run d1:2b に –ask で質問を付けて試す ／ Linux/Windows では lfm3 と d1 2b の対応（近日予定）を待つ</li>
+<li>出典: <a href="https://github.com/ollama/ollama/releases/tag/v0.40.12">https://github.com/ollama/ollama/releases/tag/v0.40.12</a></li>
+</ul>
+<h2 id="2-01650">2. 0.165.0</h2>
+<p><strong>OpenAI</strong>（2026-10-27） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>OpenAI の Codex CLI の新版 rust-v0.165.0 が GitHub Releases で公開された。Google Cloud Vertex AI の組み込みプロバイダー追加、GPT-6.1 Terra のモデルカタログ追加、会話中の reasoning effort 変更の既定有効化、新規プロファイルでの memory v2 の既定有効化などの新機能と、複数の不具合修正が含まれる。</p>
+<ul>
+<li>提供条件: GitHub Releases で Latest として公開。attached thread forks は experimental と明記。対象プラン・地域の記載なし。</li>
+<li>関係する人: Codex CLI を使う開発者、Google Cloud Vertex AI 経由でモデルを使う開発チーム</li>
+<li>今日できること: Google Cloud Vertex AI 経由で使いたい場合は、model_provider = “gcp” を設定して組み込みプロバイダーを試す ／ GPT-6.1 Terra がモデルカタログに追加されたので、新版でモデルを選べるか確認する ／ 外部エージェントのメモリを Codex に取り込みたい場合は、memory v2 に対応したこの版で取り込みを行う</li>
+<li>出典: <a href="https://github.com/openai/codex/releases/tag/rust-v0.165.0">https://github.com/openai/codex/releases/tag/rust-v0.165.0</a></li>
+</ul>
+<h2 id="3-github-copilot-assisted-permissions-generally-available">3. GitHub Copilot assisted permissions generally available</h2>
+<p><strong>GitHub</strong>（2026-10-26） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHub Copilot の assisted permissions が GitHub Copilot CLI、GitHub Copilot app、Visual Studio Code で一般提供になった。Copilot がコマンド実行・ファイルシステムのパスへのアクセス・URL を開く許可を求める際に大規模言語モデルが要求を評価し、明らかに安全と分類された要求は自動で進み、それ以外は利用者の承認が必要になる。企業管理者向けに Allow All の禁止や既定モードの指定などの制御も用意された。</p>
+<ul>
+<li>提供条件: GitHub Copilot CLI・GitHub Copilot app・Visual Studio Code が対象。企業ではポリシーで Assisted が無効化されている場合がある。</li>
+<li>関係する人: GitHub Copilot のエージェント機能を使う開発者、企業の IT 管理者・セキュリティ担当者</li>
+<li>今日できること: GitHub Copilot CLI では /permissions を実行して assisted を選ぶ ／ GitHub Copilot app ではモードピッカーの Tool permissions から、Visual Studio Code では permissions picker から Assisted を選ぶ ／ 企業管理者は enterprise-managed settings で Allow All を禁止しつつ Assisted を残すか、Assisted を無効にするかを決め、新規セッションの既定モードを設定する</li>
+<li>出典: <a href="https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available">https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available</a></li>
+</ul>
+<h2 id="4-github-copilot-supports-server-to-server-authentication">4. GitHub Copilot supports server-to-server authentication</h2>
+<p><strong>GitHub</strong>（2026-10-27） ／ 判定: <strong>△ 様子見</strong> ／ 重要度 3/5 ／ 提供: プレビュー・日本: 不明</p>
+<p>GitHub Copilot が、組織にインストールされた GitHub App 向けのサーバー間認証（server-to-server authentication）にパブリックプレビューで対応した。GitHub Copilot SDK で作ったサービスやエージェントが、サインインした利用者の資格情報に頼らず組織の代理でリクエストできる。利用量はインストール先の組織に帰属して課金され、組織のモデルポリシー・予算・支出管理が適用される。</p>
+<ul>
+<li>提供条件: パブリックプレビュー。組織にインストールされた GitHub App が対象。</li>
+<li>料金: 利用量はインストール先の組織に帰属して課金され、組織の予算・支出管理が適用されると記載（具体的な料金の記載なし）。</li>
+<li>関係する人: GitHub Copilot SDK でエージェントや自動化サービスを作る開発者、組織の GitHub 管理者・オーナー</li>
+<li>今日できること: GitHub App に読み取り専用の Copilot Requests 組織権限を付け、組織にインストールして、短期の installation access token を Copilot SDK に渡す ／ 組織オーナーは AI usage CSV レポートの app_client_id でアプリ別の利用量を確認する ／ 不要になったアプリは一時停止かアンインストールでアクセスを止める</li>
+<li>出典: <a href="https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication">https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication</a></li>
+</ul>
+<h2 id="5-openai-expands-partnership-with-oracle-to-bring-its-apps-to-chatgpt">5. OpenAI expands partnership with Oracle to bring its apps to ChatGPT</h2>
+<p><strong>OpenAI</strong>（2026-10-27） ／ 判定: <strong>△ 様子見</strong> ／ 重要度 3/5 ／ 提供: 発表のみ・日本: 不明</p>
+<p>OpenAI と Oracle はパートナーシップを拡大し、Oracle のアプリケーションとデータを ChatGPT に取り込むとともに、OpenAI のモデルと製品で動く新しい Oracle 製品・サービスを提供すると発表した。Oracle は ChatGPT 内で使う Oracle AI Workspace を開発中で、Oracle AI Security Mesh、Oracle AI SMB Bundle、Oracle App Composer も発表された。米国の Oracle 顧客は Oracle Marketplace で OpenAI API・Codex・ChatGPT Work を購入できる。</p>
+<ul>
+<li>提供条件: Oracle AI Workspace は「開発中」。Oracle Marketplace での OpenAI 製品の購入は「米国の Oracle 顧客」が対象と記載。他の製品の提供時期・対象地域は記載なし。</li>
+<li>料金: Oracle Marketplace では既存の調達プロセスと対象の Oracle Universal Credits で購入できると記載（金額の記載なし）。</li>
+<li>関係する人: Oracle のアプリケーションを使う企業の IT 部門・経営層、中小企業の経営者、セキュリティ担当者</li>
+<li>今日できること: 米国の Oracle 顧客は、Oracle Marketplace で OpenAI API・Codex・ChatGPT Work を Oracle Universal Credits で購入できるか確認する ／ Oracle AI Workspace は「開発中」と記載されているため、提供開始の案内を待ってから導入計画に入れる</li>
+<li>出典: <a href="https://openai.com/index/oracle-apps-in-chatgpt">https://openai.com/index/oracle-apps-in-chatgpt</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-10-27/">← 2026-10-27</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
