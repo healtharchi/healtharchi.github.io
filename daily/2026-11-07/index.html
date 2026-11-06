@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-11-07 のAI公式アップデート（7件） | AI一次情報デイリー</title><meta name="description" content="2026-11-07 に確認した公式発表 7 件の要約と判定。主な項目: 0.167.0"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-11-07/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-11-07 のAI公式アップデート（7件）"><meta property="og:description" content="2026-11-07 に確認した公式発表 7 件の要約と判定。主な項目: 0.167.0"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-11-07/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-11-07 のAI公式アップデート（7件）"><meta name="twitter:description" content="2026-11-07 に確認した公式発表 7 件の要約と判定。主な項目: 0.167.0"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-11-06T22:43:32.000Z">2026-11-07</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-11-07 のAI公式アップデート（7件）</h1><p class="meta">2026-11-07 に確認した公式発表 7 件の要約と判定。主な項目: 0.167.0</p><p>公式発表 7 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-01670">1. 0.167.0</h2>
+<p><strong>OpenAI</strong>（2026-11-06） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>OpenAIのCodex CLI 0.167.0のリリースノート。codex agents –no-daemonで開くエージェントのコマンドセンターと未読表示、接続先バックエンドの切り替え、ローカル画像添付のプレビュー、Google Cloud Vertex AIの設定手順、承認待ち中のパッチ詳細の展開などが追加された。モデル提供元を切り替えても保存済みチャットが見えるようにするなどの不具合修正も含む。</p>
+<ul>
+<li>提供条件: GitHub上のLatestリリース。システムプロキシ設定は/experimentalからの任意設定。画像プレビューは対応ターミナルのみ。地域に関する記載はない。</li>
+<li>関係する人: Codex CLIを使う開発者、企業のIT部門</li>
+<li>今日できること: Codex CLIを0.167.0に更新し、「codex agents –no-daemon」でコマンドセンターを開いて未読の結果を確認する ／ Google Cloud Vertex AIで使う場合は、gcp_setup_wizardを有効にしてApplication Default Credentialsか認証情報ファイルで設定する ／ 社内プロキシ環境のmacOSまたはWindowsでは、/experimentalからシステムプロキシ設定の利用を試す ／ app-serverを管理している場合は、READMEの[permissions.network]の説明を読みネットワーク制約を見直す</li>
+<li>出典: <a href="https://github.com/openai/codex/releases/tag/rust-v0.167.0">https://github.com/openai/codex/releases/tag/rust-v0.167.0</a></li>
+</ul>
+<h2 id="2-usage-metrics-api-adds-code-review-details-and-addressed-rate">2. Usage metrics API adds code review details and addressed rate</h2>
+<p><strong>GitHub</strong>（2026-11-05） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHub CopilotのUsage metrics APIで、エンタープライズと組織のリポジトリ単位の日次レポート（repos-1-day）に新しいcopilot_code_reviewオブジェクトが加わった。Copilotのコードレビューの指摘に開発者が対応した件数や、Copilotのレビュー後に人が変更要求をせずにマージされたプルリクエストの件数が分かり、リポジトリごとに対応率を追える。</p>
+<ul>
+<li>提供条件: エンタープライズと組織のrepos-1-dayレポートが対象。閲覧はエンタープライズ所有者・請求管理者・組織所有者・View Copilot Metrics権限を持つカスタムロール。Copilot usage metricsポリシーの有効化が必要。地域の記載はない。</li>
+<li>関係する人: Copilotを導入している企業の管理者、開発チームのマネージャー</li>
+<li>今日できること: Copilot usage metrics APIのrepos-1-dayレポートで、total_comments_addressedをtotal_comments_evaluatedで割り、リポジトリごとの対応率を出す ／ review_comments_by_customizationで、custom instructions・skills・MCP serversを使ったリポジトリと使っていないリポジトリの対応率を比べる ／ レポートを見られない場合は、Copilot usage metricsポリシーが有効か、自分にView Copilot Metrics権限があるかを確認する</li>
+<li>出典: <a href="https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate">https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate</a></li>
+</ul>
+<h2 id="3-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage">3. Copilot impact dashboard adds chat and VS Code agent usage</h2>
+<p><strong>GitHub</strong>（2026-11-06） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHub Copilot impact dashboardのAgent adoptionチャートに、Copilot ChatとVS Code Agents windowが加わり、9つのCopilot機能の利用状況を見られるようになった。利用者区分「Passive users」は「Chat-first users」に名称が変わった。エンタープライズと組織の28日間の利用レポートにも同じ2機能が追加された。</p>
+<ul>
+<li>提供条件: エンタープライズと組織の28日間レポートのみが対象。閲覧はエンタープライズ所有者・請求管理者・組織所有者・View Copilot Metrics権限を持つカスタムロール。Copilot usage metricsポリシーの有効化が必要。地域の記載はない。</li>
+<li>関係する人: Copilotを導入している企業の管理者、開発チームのマネージャー</li>
+<li>今日できること: Copilot impact dashboardのAgent adoptionチャートで、Copilot ChatとVS Code Agents windowの利用者数を確認する ／ APIで集計している場合は、copilot_feature_engagement.totals_by_featureに追加されたchatとvscode_agentを取り込む ／ 社内資料で「Passive users」と呼んでいた区分を「Chat-first users」に読み替える（APIではNo Cohortのまま）</li>
+<li>出典: <a href="https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage">https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage</a></li>
+</ul>
+<h2 id="4-v04015">4. v0.40.15</h2>
+<p><strong>Ollama</strong>（2026-11-03） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>Ollama v0.40.15のリリースノート。Xiaomi MiMoのコード・エージェント向け9Bモデルmimo-v2.6への対応と、質問に対して選択肢・はい/いいえの確率・評価を返すAutoTrust decision modelsへの対応が追加された。ollama launchがKimi Code CLIに対応したほか、引数なしでollamaを実行すると起動画面が開くようになった。</p>
+<ul>
+<li>提供条件: GitHub上のLatestリリース。autotrust-jevはこのリリースではApple silicon上での対応。地域に関する記載はない。</li>
+<li>関係する人: ローカルLLMを使う開発者、Ollamaの利用者</li>
+<li>今日できること: Ollamaをv0.40.15に更新し、「ollama run mimo-v2.6」でmimo-v2.6を試す ／ Apple silicon環境なら、「ollama run autotrust-jev」に–askで質問を渡し、はい/いいえ判定の出力を確認する ／ kimi-cliを使っている場合は、ollama launchからKimi Code CLIへの移行案内を確認する</li>
+<li>出典: <a href="https://github.com/ollama/ollama/releases/tag/v0.40.15">https://github.com/ollama/ollama/releases/tag/v0.40.15</a></li>
+</ul>
+<h2 id="5-the-two-ledger-model-transaction-grain-cost-accounting-for-multi-agent-ai-systems-across-clouds-models-and-systems-of-record">5. The Two-Ledger Model: Transaction-Grain Cost Accounting for Multi-Agent AI Systems Across Clouds, Models, and Systems of Record</h2>
+<p><strong>arXiv（著者: Vivek Acharya）</strong>（2026-11-04） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>複数のクラウドやLLMをまたぐマルチエージェントAIで、受注1件・請求1件といった業務取引ごとのAI費用を出すための会計モデル「Two-Ledger Model」を提案する論文。FOCUS準拠の請求データ（精算台帳）と、OpenTelemetry GenAIの記録に基づく呼び出し単位の利用記録（帰属台帳）を突き合わせる。既知の正解を持つシミュレーションで評価している。</p>
+<ul>
+<li>提供条件: 研究論文（arXiv v1、2026-11-04投稿）。製品の提供ではない。付属ファイルとしてREADME.txt、results.json、twoledger_sim.pyが掲載されている。</li>
+<li>関係する人: 企業の財務・FinOps担当者、AIエージェントを運用する企業のIT部門</li>
+<li>今日できること: 社内のAI利用記録が、受注や案件など業務取引のIDと結び付けられる形で残っているかを確認する ／ arXivの付属ファイル（README.txt、twoledger_sim.py）を読み、著者のシミュレーションを手元で再現する</li>
+<li>出典: <a href="https://arxiv.org/abs/2611.06989">https://arxiv.org/abs/2611.06989</a></li>
+</ul>
+<h2 id="6-taxonomy-of-agentic-primitives-in-amazon-quick">6. Taxonomy of agentic primitives in Amazon Quick</h2>
+<p><strong>AWS</strong>（2026-11-06） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>Amazon Quickの開発チームが、エージェントの仕事を「いつ・何を・誰が・どうやって」の4つの問いに分解した用語体系（トリガー、エージェント、能力＝ツール・スキル・ワークフロー）を紹介する記事。シリーズの第1回で、新機能の発表ではなく設計の考え方の共有である。</p>
+<ul>
+<li>提供条件: 新機能の発表ではなく、設計の考え方を説明するThought Leadership記事。提供地域や対象プランの記載はない。</li>
+<li>関係する人: AIエージェントを設計する開発者、業務の自動化を検討する企業のIT部門</li>
+<li>今日できること: 自動化したい業務を「いつ・何を・誰が・どうやって」の4つに分けて書き出し、新しいエージェントが必要か、既存エージェントへのトリガー追加で済むかを判断する ／ 定期実行の作業は迷ったら何もしない慎重な設定に、人が依頼する作業は止まらず尋ねる設定にするなど、トリガーの種類で動き方を分ける ／ 手順の順番をエージェントに任せてよい作業はスキル、順番を固定して記録が必要な作業はワークフローとして作り分ける</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick/">https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick/</a></li>
+</ul>
+<h2 id="7-partnering-with-hacktron-to-find-vulnerabilities-in-openais-systems">7. Partnering with Hacktron to find vulnerabilities in OpenAI’s systems</h2>
+<p><strong>OpenAI</strong>（2026-11-06） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 発表のみ・日本: 不明</p>
+<p>OpenAIが、自社システムの脆弱性を見つけるためにセキュリティ企業Hacktronと提携したと発表した。両社で優先度の高い領域を選んで共同で試験し、特にOpenAIのシステムと外部サービスとの連携部分に重点を置く。提携の一環として、Daybreak Redを通じたHacktronのフロンティアモデルへのアクセスを広げる。</p>
+<ul>
+<li>提供条件: 企業間の提携の発表で、一般利用者向けの製品提供ではない。</li>
+<li>関係する人: セキュリティ研究者、OpenAIのサービスを外部連携で使う企業</li>
+<li>今日できること: OpenAIのシステムで脆弱性を見つけた場合は、Security Bug Bounty programで対象範囲を確認して報告する</li>
+<li>出典: <a href="https://openai.com/index/partnering-with-hacktron">https://openai.com/index/partnering-with-hacktron</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-11-06/">← 2026-11-06</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
