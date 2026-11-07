@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-11-08 のAI公式アップデート（5件） | AI一次情報デイリー</title><meta name="description" content="2026-11-08 に確認した公式発表 5 件の要約と判定。主な項目: Copilot code review: API management and review overview upda"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-11-08/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-11-08 のAI公式アップデート（5件）"><meta property="og:description" content="2026-11-08 に確認した公式発表 5 件の要約と判定。主な項目: Copilot code review: API management and review overview upda"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-11-08/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-11-08 のAI公式アップデート（5件）"><meta name="twitter:description" content="2026-11-08 に確認した公式発表 5 件の要約と判定。主な項目: Copilot code review: API management and review overview upda"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-11-07T22:50:11.000Z">2026-11-08</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-11-08 のAI公式アップデート（5件）</h1><p class="meta">2026-11-08 に確認した公式発表 5 件の要約と判定。主な項目: Copilot code review: API management and review overview upda</p><p>公式発表 5 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-copilot-code-review-api-management-and-review-overview-updates">1. Copilot code review: API management and review overview updates</h2>
+<p><strong>GitHub</strong>（2026-11-06） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHub Copilot code review の設定を、REST API と GraphQL API で enterprise のポリシーから個々のリポジトリまで管理できるようになった。あわせてレビュー概要コメントがコンパクトになり、課金・自動レビュー・信頼性に関する不具合修正が含まれる。対象は Copilot Pro、Pro+、Max、Business、Enterprise の各プラン。</p>
+<ul>
+<li>提供条件: Copilot Pro、Pro+、Max、Business、Enterprise の各プランが対象。enterprise・organization の設定エンドポイントは GitHub Apps と fine-grained personal access tokens に非対応。</li>
+<li>料金: 料金の記載なし。code review agent のセッションでレビューに消費した AI credits が表示されるようになったとの記述のみ。</li>
+<li>関係する人: 開発者、企業のIT部門、GitHub の組織管理者</li>
+<li>今日できること: 「Configuring Copilot code review with the API」を参照し、REST API または GraphQL API で code review 設定の取得・更新を試す ／ repository 設定エンドポイントを使う GitHub App や fine-grained personal access token に Administration: read / write 権限を付与する ／ リポジトリルール「Automatically request Copilot code review」の bypass list に、自動レビュー不要の対象者を追加する ／ code review agent のセッションで、レビューに消費した AI credits を確認する</li>
+<li>出典: <a href="https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates">https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates</a></li>
+</ul>
+<h2 id="2-github-copilot-weekly-releases--november-2">2. GitHub Copilot weekly releases — November 2</h2>
+<p><strong>GitHub</strong>（2026-11-06） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHub Copilot の週次リリースで、Copilot が JetBrains Air と Xcode の組み込みコーディングアシスタントで使えるようになった。あわせて GitHub Copilot app、Copilot CLI、VS Code（1.145 release）で、プルリクエスト・設定・エージェントセッションの管理に関する更新が行われた。</p>
+<ul>
+<li>提供条件: Xcode との統合はパブリックプレビュー（Xcode 27.3 beta 以降）。VS Code のチャット表示モードは実験的機能、Agents ウィンドウのリモートアプリプレビューとキャンバスはプレビュー。JetBrains Air では既存の Copilot サブスクリプションを使用。</li>
+<li>関係する人: 開発者、iOS/macOS 開発者、JetBrains IDE の利用者</li>
+<li>今日できること: Xcode 27.3 beta 以降で、Xcode の組み込みコーディングアシスタントから GitHub Copilot をパブリックプレビューとして試す ／ Copilot CLI で /settings を開き、プラグインや MCP サーバーの設定を統合ダッシュボードで確認する ／ VS Code の設定でリモートブラウザ対応とキャンバスを有効にし、Agents ウィンドウでリモートアプリのプレビューを試す ／ JetBrains Air で既存の Copilot サブスクリプションを使い、エージェントセッションを試す</li>
+<li>出典: <a href="https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2">https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2</a></li>
+</ul>
+<h2 id="3-github-in-slack-and-teams-is-generally-available-and-more">3. @GitHub in Slack and Teams is generally available and more</h2>
+<p><strong>GitHub</strong>（2026-11-06） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>GitHub は、Slack と Teams で使える @GitHub が一般提供になったと発表した（題名による）。Teams では Canvas で実装計画やコード変更、プレビューを会話と並べて確認でき、リポジトリの自動特定など導入手順の簡略化、追加メッセージへの応答の不具合修正、作成元の明記が加わった。</p>
+<ul>
+<li>提供条件: 一般提供は題名に記載。対象プランや地域の記載なし。Canvas は Teams での機能として記載。</li>
+<li>関係する人: 開発者、企業のIT部門、Slack・Teams を使うチーム</li>
+<li>今日できること: Slack または Teams で @GitHub を試し、会話から issue 作成やプルリクエスト作成を依頼する ／ Teams で Canvas を使い、実装計画やコード変更を会話と並べて確認する</li>
+<li>出典: <a href="https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available">https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available</a></li>
+</ul>
+<h2 id="4-ai情報通11月5日15時の情報">4. AI情報通：11月5日15時の情報</h2>
+<p><strong>AIセーフティ・インスティテュート（AISI）</strong> ／ 判定: <strong>△ 様子見</strong> ／ 重要度 3/5 ／ 提供: 不明・日本: 不明</p>
+<p>AISI が、組織のAI利用に関連するインシデント事例として、Binance の社内AIツール悪用に関連する資産流出事案の初期調査結果と、Google が公表したAIツールの利用権限を乗っ取る攻撃「LLMJacking」の分析結果を紹介した。あわせて OpenAI、英国政府、英国 NCSC、NIST、ドイツ連邦政府、Meta によるAI関連の公表を要約している。</p>
+<ul>
+<li>提供条件: 製品の提供に関する発表ではなく、AIセーフティに関する情報提供ページ。</li>
+<li>関係する人: 企業のIT部門、企業のセキュリティ担当者、経営層</li>
+<li>今日できること: 自社で使うAIツールのAPIキーやクラウドの認証情報の管理を見直し、利用者・システムに与える権限を最小化する ／ AIツールの利用量・料金に上限を設定する ／ AIツールの設定変更やアクセス記録を監視し、無断での有効化や不審なAPIアクセスを早期に検知できるようにする</li>
+<li>出典: <a href="https://aisi.go.jp/activity/activity_news/261106/">https://aisi.go.jp/activity/activity_news/261106/</a></li>
+</ul>
+<h2 id="5-how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore">5. How Greenlight Financial built an autonomous SOC solution on Amazon Bedrock AgentCore</h2>
+<p><strong>AWS</strong>（2026-11-06） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>AWS Machine Learning Blog が、Greenlight Financial が Amazon Bedrock AgentCore 上に自律型 SOC（セキュリティ運用センター）の仕組み「Luna」を構築した事例を紹介した。Tier 1／Tier 2 の階層型スーパーバイザーと 30 を超える専門エージェント、AgentCore memory によるエピソード記憶を組み合わせ、Greenlight の計測では月最大 4,000 件のケースの 90 パーセント超を人の介入なしに解決しているとしている。</p>
+<ul>
+<li>提供条件: 顧客事例の紹介であり、新製品・新機能の提供開始の発表ではない。</li>
+<li>関係する人: 企業のセキュリティ部門、金融業界のIT部門、AIエージェントを設計する開発者</li>
+<li>今日できること: Amazon Bedrock AgentCore の製品ページとドキュメントで、AgentCore runtime と AgentCore memory の機能を確認する ／ 自社の SOC で、定型ケースを扱う Tier 1 と複雑なケースを扱う Tier 2 に分けるエスカレーション基準を書き出す</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/">https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-11-07/">← 2026-11-07</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
