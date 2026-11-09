@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-11-10 のAI公式アップデート（5件） | AI一次情報デイリー</title><meta name="description" content="2026-11-10 に確認した公式発表 5 件の要約と判定。主な項目: ChatGPT Enterprise now available in AWS Marketplace"><link rel="canonical" href="https://healtharchi.github.io/daily/2026-11-10/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-11-10 のAI公式アップデート（5件）"><meta property="og:description" content="2026-11-10 に確認した公式発表 5 件の要約と判定。主な項目: ChatGPT Enterprise now available in AWS Marketplace"><meta property="og:url" content="https://healtharchi.github.io/daily/2026-11-10/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-11-10 のAI公式アップデート（5件）"><meta name="twitter:description" content="2026-11-10 に確認した公式発表 5 件の要約と判定。主な項目: ChatGPT Enterprise now available in AWS Marketplace"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-11-09T22:44:25.000Z">2026-11-10</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-11-10 のAI公式アップデート（5件）</h1><p class="meta">2026-11-10 に確認した公式発表 5 件の要約と判定。主な項目: ChatGPT Enterprise now available in AWS Marketplace</p><p>公式発表 5 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-chatgpt-enterprise-now-available-in-aws-marketplace">1. ChatGPT Enterprise now available in AWS Marketplace</h2>
+<p><strong>OpenAI</strong>（2026-11-09） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>OpenAI は、ChatGPT Enterprise を AWS Marketplace で購入できるようにしたと発表した。企業は既存の AWS の購買・請求の関係を使って導入・管理でき、対象となる支出を AWS のコミットメントに充当できる。対象顧客は ChatGPT for Healthcare と ChatGPT for Financial Services も AWS Marketplace で利用できる。</p>
+<ul>
+<li>提供条件: AWS Marketplace 経由の購入。利用資格は OpenAI または AWS のアカウントチームに確認する。ChatGPT for Healthcare と ChatGPT for Financial Services は対象顧客のみ。地域の記載なし。</li>
+<li>料金: 価格の記載なし。対象となる支出を AWS のコミットメントに充当できる。</li>
+<li>関係する人: 企業のIT部門、調達・購買担当、経営層</li>
+<li>今日できること: AWS を契約している企業は、OpenAI または AWS のアカウントチームに問い合わせて AWS Marketplace 経由の ChatGPT Enterprise の利用資格を確認する ／ AWS のコミットメントがある場合、ChatGPT Enterprise の支出が充当の対象になるかをアカウントチームに確認する</li>
+<li>出典: <a href="https://openai.com/index/chatgpt-enterprise-aws-marketplace">https://openai.com/index/chatgpt-enterprise-aws-marketplace</a></li>
+</ul>
+<h2 id="2-single-shot-and-agentic-retrieval-with-amazon-bedrock-managed-knowledge-base">2. Single-shot and agentic retrieval with Amazon Bedrock Managed Knowledge Base</h2>
+<p><strong>AWS</strong>（2026-11-09） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>AWS は、Amazon Bedrock Managed Knowledge Base の AgenticRetrieveStream API で、検索を1回して回答を作る single-shot RAG と、回答を作らず該当箇所だけ返す retrieval-only に対応したと発表した。maxAgentIteration の範囲が 0〜5 に広がり、1つのパラメータで3つの方式を切り替えられる。</p>
+<ul>
+<li>提供条件: AgenticRetrieveStream の maxAgentIteration に 0 と 1 が追加。リージョンの記載なし。</li>
+<li>関係する人: 開発者、社内検索・RAG の担当者、企業のIT部門</li>
+<li>今日できること: AgenticRetrieveStream を使っている場合、単純な質問のリクエストで maxAgentIteration=1 と generateResponse=true を試し、応答時間と回答品質を現行設定と比べる ／ 原文の確認だけが目的の画面では maxAgentIteration=0 と generateResponse=false にして、基盤モデルを呼ばずにパッセージを返す ／ 自社文書の代表的な質問と期待回答の組を用意し、複数文書にまたがる質問や文書で答えられない質問も含めて、各業務で品質を満たす最も低い反復上限を選ぶ</li>
+<li>出典: <a href="https://aws.amazon.com/blogs/machine-learning/single-shot-and-agentic-retrieval-with-amazon-bedrock-managed-knowledge-base/">https://aws.amazon.com/blogs/machine-learning/single-shot-and-agentic-retrieval-with-amazon-bedrock-managed-knowledge-base/</a></li>
+</ul>
+<h2 id="3-v04016">3. v0.40.16</h2>
+<p><strong>Ollama</strong>（2026-11-09） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: プレビュー・日本: 不明</p>
+<p>Ollama の v0.40.16-rc0 がプレリリースとして公開された。OpenAI 互換 API の修正、llama.cpp の更新、Windows ARM64 向けの CUDA 13.5 対応、Claude Code の起動時のルーティング修正などが含まれる。</p>
+<ul>
+<li>提供条件: v0.40.16-rc0 はプレリリース（リリース候補）。</li>
+<li>関係する人: 開発者、ローカルLLMの利用者</li>
+<li>今日できること: Ollama の OpenAI 互換 API で /v1/models の応答を前提にしているコードがある場合、モデル未インストール時に空の配列が返る動作を確認する ／ Ollama 経由で Claude Code を起動している場合、v0.40.16-rc0 でルーティングと提供終了モデルのエラーが直っているかを検証する</li>
+<li>出典: <a href="https://github.com/ollama/ollama/releases/tag/v0.40.16-rc0">https://github.com/ollama/ollama/releases/tag/v0.40.16-rc0</a></li>
+</ul>
+<h2 id="4-coderabbit-scales-agentic-software-development-and-ships-20x-more">4. CodeRabbit scales agentic software development and ships 20x more</h2>
+<p><strong>OpenAI</strong>（2026-11-09） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>OpenAI は、AI が生成したコードの検証・レビュー基盤を提供する CodeRabbit の導入事例を公開した。CodeRabbit は OpenAI のモデルでレビューを行い、Codex の利用で同じ人数のまま約20倍のソフトウェアを出荷していると述べ、Daybreak を使ったセキュリティ製品 CodeRabbit Secure も提供している。</p>
+<ul>
+<li>提供条件: 導入事例の記事で、新製品の提供条件の記載は無い。</li>
+<li>料金: CodeRabbit が過去2週間のキャンペーンで $1M 分の無料ディープスキャンを提供したという記述のみ。</li>
+<li>関係する人: 開発者、開発チームの責任者、セキュリティ担当者</li>
+<li>今日できること: コーディングエージェントを導入しているチームは、出典が挙げる制約（ノートPCのメモリや計算資源、テスト、ビルドの道具、依存関係）のどこで詰まっているかを洗い出す ／ リリース手順の中で人の承認が必要な箇所と、低リスクで自動出荷できる変更を分けて整理する</li>
+<li>出典: <a href="https://openai.com/index/coderabbit-codex-daybreak">https://openai.com/index/coderabbit-codex-daybreak</a></li>
+</ul>
+<h2 id="5-自治体からの照会事務の自動化などの国地方ai共通サービスに関する実証事業に関する自治体版バイバインシステム導通確認手順書を掲載しました">5. 「自治体からの照会事務の自動化などの国・地方AI共通サービスに関する実証事業」に関する自治体版バイバインシステム導通確認手順書を掲載しました</h2>
+<p><strong>デジタル庁</strong>（2026-11-09） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 限定提供・日本: ○</p>
+<p>デジタル庁は、自治体の照会事務を省力化する生成AI機能「自治体版バイバイン」の実証事業について、参加自治体向けの導通確認手順書を掲載した。実証事業は都道府県と市区町村から50〜100団体程度を募集しており、募集期間は2026年11月13日まで、実証期間は2026年11月24日から2027年2月10日までである。</p>
+<ul>
+<li>提供条件: 参加自治体（都道府県・市区町村、50〜100団体程度）に試験的に提供。募集は2026年11月13日まで、実証は2026年11月24日〜2027年2月10日。</li>
+<li>関係する人: 自治体職員、自治体の情報政策担当</li>
+<li>今日できること: 参加を検討する自治体は、2026年11月13日（金）までに応募フォームから応募する ／ 応募前に、掲載されている実証自治体募集要項と FAQ 一覧の PDF を確認する ／ 参加予定の自治体は、参加自治体向けの自治体版バイバインシステム導通確認手順書（PDF）で接続確認の手順を確認する</li>
+<li>出典: <a href="https://www.digital.go.jp/policies/genai/0ef07948-2f5d-4b45-8ebe-ea974c20a3ac">https://www.digital.go.jp/policies/genai/0ef07948-2f5d-4b45-8ebe-ea974c20a3ac</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-11-08/">← 2026-11-08</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
