@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>OpenAI、perplexityを業界共通の指標に提案 | AI一次情報デイリー</title><meta name="description" content="OpenAIのChief Scientistが、GPT‑3.5以降の社内perplexity値を公開し、各社共通の開発上限づくりを提案しました。製品の提供ではなく、AIの安全・評価や政策に関わる人向けの論考です。"><link rel="canonical" href="https://healtharchi.github.io/posts/2026-11-23-openai-perplexity-shared-safety-metric/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="article"><meta property="og:title" content="OpenAI、perplexityを業界共通の指標に提案"><meta property="og:description" content="OpenAIのChief Scientistが、GPT‑3.5以降の社内perplexity値を公開し、各社共通の開発上限づくりを提案しました。製品の提供ではなく、AIの安全・評価や政策に関わる人向けの論考です。"><meta property="og:url" content="https://healtharchi.github.io/posts/2026-11-23-openai-perplexity-shared-safety-metric/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="OpenAI、perplexityを業界共通の指標に提案"><meta name="twitter:description" content="OpenAIのChief Scientistが、GPT‑3.5以降の社内perplexity値を公開し、各社共通の開発上限づくりを提案しました。製品の提供ではなく、AIの安全・評価や政策に関わる人向けの論考です。"><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"OpenAI、perplexityを業界共通の指標に提案","description":"OpenAIのChief Scientistが、GPT‑3.5以降の社内perplexity値を公開し、各社共通の開発上限づくりを提案しました。製品の提供ではなく、AIの安全・評価や政策に関わる人向けの論考です。","datePublished":"2026-11-22T22:41:01.000Z","dateModified":"2026-11-22T22:41:01.000Z","inLanguage":"ja","mainEntityOfPage":"https://healtharchi.github.io/posts/2026-11-23-openai-perplexity-shared-safety-metric/","author":{"@type":"Organization","name":"AI一次情報デイリー","url":"https://healtharchi.github.io"},"publisher":{"@type":"Organization","name":"AI一次情報デイリー","url":"https://healtharchi.github.io"},"image":["https://healtharchi.github.io/og-default.png"],"citation":["https://openai.com/index/perplexity-and-intelligence"],"keywords":"OpenAI,perplexity,AI安全性,評価指標"}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">速報解説</span><time datetime="2026-11-22T22:41:01.000Z">公開 2026-11-23</time><span class="badge" title="検品モデル: gpt-6-astra / スコア 100">✓ AI検品済み</span></div><h1>OpenAI、perplexityを業界共通の指標に提案</h1><p class="meta">OpenAIのChief Scientistが、GPT‑3.5以降の社内perplexity値を公開し、各社共通の開発上限づくりを提案しました。製品の提供ではなく、AIの安全・評価や政策に関わる人向けの論考です。</p><p class="meta"><span>対象:</span><span class="chip">AIの安全・評価に関わる研究者</span><span class="chip">AI政策・規制の担当者</span><span class="chip">企業のAI導入責任者</span></p><aside class="verdict wait" aria-label="判定"><div class="mark">△</div><div><div class="label">判定: 様子見</div><div class="reason">新しい製品や機能の提供ではなく、筆者個人の提案として書かれた論考です。業界基準として採用されたものではないため、議論の行方を見守る段階です。</div></div></aside><nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#何が発表されたか">何が発表されたか</a></li><li><a href="#誰に関係するか">誰に関係するか</a></li><li><a href="#今日できること">今日できること</a></li><li><a href="#注意点">注意点</a></li></ol></nav><h2 id="何が発表されたか">何が発表されたか</h2>
+<p>OpenAI は 2026年11月22日、Chief Scientist の Jakub Pachocki 氏による論考を公開しました。要点は次の3つです。</p>
+<ul>
+<li><strong>指標の提案</strong>: perplexity（モデルが次のトークンをどれだけうまく予測するかの指標。低いほど良い）を、開発各社の比較と共通の安全基準づくりに使うべきだと主張しています。</li>
+<li><strong>社内の数値を公開</strong>: 第一歩として、OpenAI 内部の測定値を公開しました。競合に自社の位置が伝わる懸念より、業界共通の安全策を急ぐことを優先したと説明しています。</li>
+<li><strong>共通の開発上限</strong>: AI の挙動を理解・監視する力が具体的な節目（CoT monitors の後継の開発など）に達するまで、各社が越えないと約束する上限を、perplexity などに基づいて設けることを提案しています。</li>
+</ul>
+<p>公開された数値は log-perplexity で、社内コードベース由来の評価用データセット（固定スナップショット）での値です。</p>
+<table>
+<thead>
+<tr>
+<th>モデル・段階</th>
+<th>log-perplexity</th>
+<th>出典が挙げる能力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT‑3.5</td>
+<td>約 0.99</td>
+<td>流暢な会話。初代 ChatGPT の基盤</td>
+</tr>
+<tr>
+<td>GPT‑4</td>
+<td>約 0.91</td>
+<td>chain-of-thought 推論の活用</td>
+</tr>
+<tr>
+<td>0.8 未満</td>
+<td>—</td>
+<td>サイバーセキュリティや数学での変革的な能力</td>
+</tr>
+<tr>
+<td>数学の評価に使ったモデル</td>
+<td>約 0.76</td>
+<td>数学の未解決問題で画期的な結果</td>
+</tr>
+</tbody>
+</table>
+<p>筆者は、約 0.68〜0.7 の範囲に入るとさらに変革的な能力が出ると予想していますが、それが何かは分からないとしています。早ければ 2027 年に事前学習の基礎的な進歩が相次ぐ可能性にも触れています。いずれも筆者の見込みです。</p>
+<h2 id="誰に関係するか">誰に関係するか</h2>
+<ul>
+<li><strong>AIの安全・評価に関わる研究者</strong>: 主要企業が事前学習の進み具合を数値で示した材料です。評価方法の共通規範づくりや、安全性ケースのレッドチーミングを各社共同で整える提案も含まれます。</li>
+<li><strong>AI政策・規制の担当者</strong>: 「どの指標で、どこに上限を置くか」という業界共通の枠組みの案が示されています。</li>
+<li><strong>企業のAI導入責任者</strong>: 能力がどの段階で現れてきたかを、OpenAI 自身の数値でたどれます。</li>
+</ul>
+<h2 id="今日できること">今日できること</h2>
+<ul>
+<li>出典記事の冒頭のグラフで、GPT‑3.5 以降の OpenAI モデルの perplexity の推移を確認する。</li>
+<li>出典が挙げる課題を、自社のAI評価方針を考える材料として読む。挙げられている課題は次のとおりです。
+<ul>
+<li>研究所ごとに評価データや学習データが異なり、比較が難しい</li>
+<li>実務で使う評価と直接は対応しない</li>
+<li>chain-of-thought 推論は能力を大きく高めるが perplexity は下げないため、事前学習以外の進歩を反映しない</li>
+<li>到達できる下限が分からない</li>
+</ul>
+</li>
+</ul>
+<h2 id="注意点">注意点</h2>
+<ul>
+<li>共通の上限は筆者個人の提案で、業界基準として採用されたものではありません。</li>
+<li>数値は OpenAI 社内のデータセットでの値です。出典自身が、研究所間の比較は難しいと述べています。</li>
+<li>他社の数値や、上限の具体的な値は出典に記載なしです。</li>
+</ul>
+<section class="sources"><h2>出典（一次情報）</h2><ol><li><a href="https://openai.com/index/perplexity-and-intelligence" rel="noopener" target="_blank">Perplexity and Intelligence</a><span> — OpenAI（2026-11-22）</span></li></ol></section><p class="notice">この記事はAI（調査: Claude Sonnet 5 / 執筆: Claude Sonnet 5）が上記の公式一次情報だけを根拠に生成し、AI（Codex）が出典との整合・捏造の有無・構成を検品して公開しています。検品基準は<a href="/editorial-policy/">編集方針</a>で公開しています。誤りを見つけた場合は<a href="/contact/">お問い合わせ</a>からご連絡ください。</p><p class="tags"><a class="chip" href="/tags/OpenAI/">OpenAI</a><a class="chip" href="/tags/perplexity/">perplexity</a><a class="chip" href="/tags/AI%E5%AE%89%E5%85%A8%E6%80%A7/">AI安全性</a><a class="chip" href="/tags/%E8%A9%95%E4%BE%A1%E6%8C%87%E6%A8%99/">評価指標</a></p></article><section><h2>関連記事</h2><div class="grid"><article class="card"><div class="meta"><span class="chip type">速報解説</span><time datetime="2026-11-17T22:44:49.000Z">2026-11-18</time><span class="chip">○ 試す価値あり</span></div><h3><a href="/posts/2026-11-18-github-copilot-gpt-6-2-astra-sol/">Copilot、GPT-6.2 AstraとSolを一般提供</a></h3><p>GitHub Copilot で OpenAI の GPT-6.2 Astra と Sol が一般提供になりました。対象は Pro+・Max・Business・Enterprise で従量課金です。管理者は自動有効の設定を確認しましょう。</p></article><article class="card"><div class="meta"><span class="chip type">速報解説</span><time datetime="2026-11-15T22:43:00.000Z">2026-11-16</time><span class="chip">△ 様子見</span></div><h3><a href="/posts/2026-11-16-aisi-control-room-claude-fable-5-2/">AISI、出力停止の仕組みとFable 5.2を紹介</a></h3><p>AISI が「AI情報通」で、OpenAI の出力停止の仕組み Control Room と、Anthropic の Claude Fable 5.2・Mythos 5.2 の提供条件と安全性評価を紹介。各国の規制方針も要約しています。</p></article><article class="card"><div class="meta"><span class="chip type">速報解説</span><time datetime="2026-11-06T22:46:22.000Z">2026-11-07</time><span class="chip">○ 試す価値あり</span></div><h3><a href="/posts/2026-11-07-openai-codex-cli-0-167-0-release/">OpenAI、Codex CLI 0.167.0を公開</a></h3><p>OpenAIがCodex CLI 0.167.0を公開しました。エージェントのコマンドセンター、Google Cloud Vertex AIの設定、社内プロキシ対応などが加わり、Codex CLIの利用者と企業のIT部門に関係します。</p></article><article class="card"><div class="meta"><span class="chip type">速報解説</span><time datetime="2026-11-05T22:40:04.000Z">2026-11-06</time><span class="chip">△ 様子見</span></div><h3><a href="/posts/2026-11-06-openai-gpt-6-cyber-daybreak/">OpenAI、脆弱性調査向けGPT‑6 Cyberを発表</a></h3><p>OpenAIが脆弱性の発見と修正案づくりに特化したGPT‑6 Cyberを発表しました。提供は承認済みの一部Daybreak Red顧客に限られ、料金と日本での提供は出典に記載がありません。セキュリティ部門向けの話題です。</p></article></div></section></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
