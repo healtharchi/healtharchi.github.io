@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2026-11-24 のAI公式アップデート（5件） | AI一次情報デイリー</title><meta name="description" content="2026-11-24 に確認した公式発表 5 件の要約と判定。主な項目: Get Started with GPU-Accelerated DuckDB Analytics Using the "><link rel="canonical" href="https://healtharchi.github.io/daily/2026-11-24/"><link rel="alternate" type="application/rss+xml" title="AI一次情報デイリー" href="https://healtharchi.github.io/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="google-site-verification" content="_NVhFI_B55-3zLldzhOMXe-0zPVzY5gzc1mwqOu9IYM"><meta name="robots" content="noindex"><meta name="robots" content="max-image-preview:large"><meta property="og:site_name" content="AI一次情報デイリー"><meta property="og:type" content="website"><meta property="og:title" content="2026-11-24 のAI公式アップデート（5件）"><meta property="og:description" content="2026-11-24 に確認した公式発表 5 件の要約と判定。主な項目: Get Started with GPU-Accelerated DuckDB Analytics Using the "><meta property="og:url" content="https://healtharchi.github.io/daily/2026-11-24/"><meta property="og:image" content="https://healtharchi.github.io/og-default.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="2026-11-24 のAI公式アップデート（5件）"><meta name="twitter:description" content="2026-11-24 に確認した公式発表 5 件の要約と判定。主な項目: Get Started with GPU-Accelerated DuckDB Analytics Using the "><meta name="twitter:image" content="https://healtharchi.github.io/og-default.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-3LNRYGPH78"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3LNRYGPH78');</script><link rel="stylesheet" href="/_astro/Base.iEgBZBU_.css"></head><body><header class="site"><div class="container"><a class="brand" href="/">AI一次情報デイリー<small>一次情報だけ。毎日。判定つき。</small></a><nav aria-label="メイン"><a href="/reference/models/">料金定点表</a><a href="/daily/">日次</a><a href="/posts/">記事</a><a href="/editorial-policy/">編集方針</a><a href="/rss.xml">RSS</a></nav></div></header><main><div class="container"><article><div class="meta"><span class="chip type">日次ダイジェスト</span><time datetime="2026-11-23T22:44:02.000Z">2026-11-24</time><span class="badge">✓ AI検品済み（各項目を出典と照合）</span></div><h1>2026-11-24 のAI公式アップデート（5件）</h1><p class="meta">2026-11-24 に確認した公式発表 5 件の要約と判定。主な項目: Get Started with GPU-Accelerated DuckDB Analytics Using the </p><p>公式発表 5 件。各項目は公式一次情報の要約で、判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しています。</p>
+<h2 id="1-get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension">1. Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension</h2>
+<p><strong>NVIDIA</strong>（2026-11-23） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>NVIDIA と DuckLabs が、GPU-native の SQL engine である Sirius を DuckDB の core extension として公開した。INSTALL sirius; と LOAD sirius; の 2 つの SQL コマンドで、SQL を書き換えずに対応する分析クエリを NVIDIA GPU で実行でき、対応していない機能を含むクエリは DuckDB の CPU engine に戻る。TPC-H 由来のクエリを使った cold run の比較で、調整済みの 2 GPU 構成が 3.25x〜5.50x の高速化を示したと報告している。</p>
+<ul>
+<li>提供条件: DuckDB の core extension として公開。DuckDB 2.0 と、対応するドライバーの入った NVIDIA GPU が必要。GPU で実行されるのは対応するクエリで、対応していない機能を含むクエリは DuckDB の CPU engine に戻る。</li>
+<li>関係する人: DuckDB を使うデータエンジニア、データ分析基盤の担当者、NVIDIA GPU を持つ開発者</li>
+<li>今日できること: DuckDB 2.0 と対応するドライバーの入った NVIDIA GPU がある環境で、INSTALL sirius; と LOAD sirius; を実行して拡張を入れる（およそ 700 MB） ／ 出典の手順どおり、INSTALL tpch; LOAD tpch; CALL dbgen(sf=0.01); CHECKPOINT; で小さな試し用データを作り、lineitem への集計クエリを実行する ／ Sirius のリポジトリにある benchmark runner・query definitions・configuration details・setup instructions で、自分のハードウェアでの性能を確かめる</li>
+<li>出典: <a href="https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/">https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/</a></li>
+</ul>
+<h2 id="2-openai-and-cisco-introduce-shirudo">2. OpenAI and Cisco introduce Shirudo</h2>
+<p><strong>OpenAI</strong>（2026-11-23） ／ 判定: <strong>○ 試す価値あり</strong> ／ 重要度 3/5 ／ 提供: 一般提供・日本: 不明</p>
+<p>OpenAI と Cisco が、パッチを配り終えるまでの間、動いている Linux システムを守るための open-source の runtime「Shirudo」を公開した。eBPF を使い、shield と呼ぶ一時的な防御を、サービスを再起動せずに適用する。統制された試験では、Codex が生成した shield が、動作中の Elasticsearch への Java4Shell の攻撃の試みを再起動なしで防いだとしている。</p>
+<ul>
+<li>提供条件: open-source として公開。対象は Linux システム。ライセンスは BSD 2-Clause、BPF programs は BSD と GPL のデュアルライセンス。4 つの中核機能は「designing Shirudo around」と設計方針として書かれている。</li>
+<li>関係する人: Linux サーバーを運用するインフラ担当者、セキュリティチーム、セキュリティ研究者、eBPF に関わる開発者</li>
+<li>今日できること: 出典が案内する VM quickstart に沿って、試験用の防御を署名・読み込み・検証する ／ Isovalent の self-guided lab で Shirudo を触ってみる ／ 12月15日の webinar に登録する ／ GitHub のコードと docs を読み、気づいた点を出典の案内先に伝える</li>
+<li>出典: <a href="https://openai.com/index/introducing-shirudo">https://openai.com/index/introducing-shirudo</a></li>
+</ul>
+<h2 id="3-a-more-tailored-google-search-thats-uniquely-yours">3. A more tailored Google Search that’s uniquely yours</h2>
+<p><strong>Google</strong>（2026-11-23） ／ 判定: <strong>△ 様子見</strong> ／ 重要度 3/5 ／ 提供: 限定提供・日本: 不明</p>
+<p>Google が、Search の AI Mode の Personal Intelligence に、利用者が自分で選んで（opt in）Google Wallet をつなげられる機能の展開を始めた。Drive と Gemini app は今後数週間で対応する。あわせて、AI Overviews と AI Mode で、直近の検索の文脈に合わせた応答が出るようになる。</p>
+<ul>
+<li>提供条件: Google Wallet との接続は本日から順次展開（Starting to roll out today）。Drive と Gemini app は今後数週間で対応予定。利用は opt in。対象の国・言語・プランは出典に記載なし。</li>
+<li>関係する人: Google Search の一般利用者、Google Wallet・Drive・Gemini app の利用者、検索のパーソナライズと個人データの扱いを気にする人</li>
+<li>今日できること: 使いたい場合は、Search Personalization を開き、Connected Apps を選び、つなぎたいアプリを選ぶ ／ つないだアプリの接続は、同じ設定でいつでもオン・オフを切り替える ／ 直近の検索に合わせた応答を望まない場合は、Search Settings でパーソナライズを調整またはオフにする</li>
+<li>出典: <a href="https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/">https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/</a></li>
+</ul>
+<h2 id="4-richpanel-helps-companies-automate-50-of-support-in-30-days">4. Richpanel helps companies automate 50% of support in 30 days</h2>
+<p><strong>OpenAI</strong>（2026-11-23） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>OpenAI が、顧客対応の AI を提供するスタートアップ Richpanel の導入事例を公開した。Richpanel は、AI のサポート担当に必要な道具と手順を整える役に GPT-6 Astra と GPT-6.1 Sol を、会話そのものには GPT-6 Luna を使い分けている。同社は最初の 30 日以内に 50% の自動化率を保証し、達しなければ返金するとしている。</p>
+<ul>
+<li>提供条件: 導入事例の紹介で、新しい製品や機能の提供発表ではない。</li>
+<li>関係する人: 顧客サポート部門の責任者、サポート向け AI を作る開発者、コンタクトセンターを外注している企業の経営層</li>
+<li>今日できること: 自社のサポート担当が 1 件の対応で使う道具の数と、文書になっていない手順を洗い出す ／ 道具と手順を整える工程には精度を優先したモデル、件数の多い会話には費用を重視したモデル、という出典の使い分けを自社の構成と見比べる</li>
+<li>出典: <a href="https://openai.com/business/customer-stories/richpanel-ai-customer-support">https://openai.com/business/customer-stories/richpanel-ai-customer-support</a></li>
+</ul>
+<h2 id="5-metarigor-from-agentic-automation-to-verifiable-end-to-end-meta-analysis-through-scientific-decision-boundaries">5. MetaRigor: From Agentic Automation to Verifiable End-to-End Meta-Analysis Through Scientific Decision Boundaries</h2>
+<p><strong>arXiv（著者: Yifeng Xie ほか 8 名）</strong>（2026-11-20） ／ 判定: <strong>× 無視でOK</strong> ／ 重要度 2/5 ／ 提供: 不明・日本: 不明</p>
+<p>メタ分析を LLM で端から端まで自動化しつつ検証できるようにするワークフローの枠組み MetaRigor の論文が arXiv に投稿された。研究結果を Study x Target の単位で整理し、文脈に依存する意味の解釈はモデルが、形式化できる規則・計算・検証・出典の確認はプログラムが受け持つ。5 つの段階での評価で、完全な結果の受け渡しの F1 score が 86.29% だったと報告している。</p>
+<ul>
+<li>提供条件: 論文の公開。コードやツールの提供についての記述は取得できた本文に無い。</li>
+<li>関係する人: メタ分析・システマティックレビューを行う研究者、LLM で調査や文献整理の自動化を作る開発者</li>
+<li>今日できること: arXiv のページ（arXiv:2611.27713）から PDF か HTML 版を開き、評価の条件と baseline の内容を確認する ／ LLM に調査を任せる仕組みを作っている場合、文脈に依存する解釈はモデル、規則・計算・検証・出典の確認はプログラム、という出典の分担を自分の仕組みと見比べる</li>
+<li>出典: <a href="https://arxiv.org/abs/2611.27713">https://arxiv.org/abs/2611.27713</a></li>
+</ul>
+<p class="notice">このページは公式一次情報の要約です。判定はルール（提供段階 × 日本での利用可否 × 重要度）で自動付与しており、性能の評価ではありません。契約・導入の前に必ず出典をご確認ください。</p></article><nav class="pager" aria-label="前後のダイジェスト"><span><a href="/daily/2026-11-23/">← 2026-11-23</a></span><span><a href="/daily/">一覧</a></span><span></span></nav></div></main><footer class="site"><div class="container"><div><a href="/about/">運営者情報</a><a href="/editorial-policy/">編集方針・検品基準</a><a href="/privacy/">プライバシーポリシー</a><a href="/contact/">お問い合わせ</a><a href="/rss.xml">RSS</a></div><p>© 2026 AI一次情報デイリー. 記事はAIが公式一次情報から生成し、AIが検品した上で公開しています。出典は各記事末尾に明記しています。</p></div></footer></body></html>
